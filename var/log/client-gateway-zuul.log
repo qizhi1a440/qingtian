@@ -1,0 +1,251 @@
+2019-05-27 08:16:54.323  INFO 18332 --- [main] c.e.serverzuul.ServerZuulApplication     : The following profiles are active: dev
+2019-05-27 08:16:54.812  WARN 18332 --- [main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2019-05-27 08:16:54.818  WARN 18332 --- [main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'hystrix.stream' contains invalid characters, please migrate to a valid format.
+2019-05-27 08:16:54.936  INFO 18332 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=940fef41-28ee-35de-b373-302e3dbdf4f3
+2019-05-27 08:16:55.062  INFO 18332 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$461987e9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-05-27 08:16:55.223  INFO 18332 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8771 (http)
+2019-05-27 08:16:55.240  INFO 18332 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-05-27 08:16:55.240  INFO 18332 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2019-05-27 08:16:55.408  INFO 18332 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-05-27 08:16:55.409  INFO 18332 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1070 ms
+2019-05-27 08:16:55.478  WARN 18332 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-05-27 08:16:55.478  INFO 18332 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-05-27 08:16:55.484  INFO 18332 --- [main] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@4288d98e
+2019-05-27 08:16:56.924  INFO 18332 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2019-05-27 08:16:58.371  INFO 18332 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2019-05-27 08:16:58.567  INFO 18332 --- [main] o.s.b.a.e.web.ServletEndpointRegistrar   : Registered '/actuator/hystrix.stream' to hystrix.stream-actuator-endpoint
+2019-05-27 08:16:58.626  WARN 18332 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-05-27 08:16:58.627  INFO 18332 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-05-27 08:16:58.741  INFO 18332 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-05-27 08:16:59.395  INFO 18332 --- [main] o.s.c.n.zuul.ZuulFilterInitializer       : Starting filter initializer
+2019-05-27 08:16:59.405  INFO 18332 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 23 endpoint(s) beneath base path '/actuator'
+2019-05-27 08:16:59.481  INFO 18332 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2019-05-27 08:16:59.506  INFO 18332 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2019-05-27 08:16:59.541  INFO 18332 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2019-05-27 08:16:59.542  INFO 18332 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2019-05-27 08:16:59.620  INFO 18332 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2019-05-27 08:16:59.620  INFO 18332 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2019-05-27 08:16:59.736  INFO 18332 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-05-27 08:16:59.982  INFO 18332 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2019-05-27 08:16:59.983  INFO 18332 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2019-05-27 08:16:59.983  INFO 18332 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2019-05-27 08:16:59.983  INFO 18332 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2019-05-27 08:16:59.983  INFO 18332 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2019-05-27 08:16:59.984  INFO 18332 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2019-05-27 08:16:59.984  INFO 18332 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2019-05-27 08:17:00.082  INFO 18332 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2019-05-27 08:17:00.084  INFO 18332 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 10
+2019-05-27 08:17:00.086  INFO 18332 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2019-05-27 08:17:00.088  INFO 18332 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1558916220088 with initial instances count: 3
+2019-05-27 08:17:00.090  INFO 18332 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application SERVER-ZUUL with eureka with status UP
+2019-05-27 08:17:00.090  INFO 18332 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1558916220090, current=UP, previous=STARTING]
+2019-05-27 08:17:00.093  INFO 18332 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SERVER-ZUUL/localhost:server-zuul:8771: registering service...
+2019-05-27 08:17:00.119  INFO 18332 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SERVER-ZUUL/localhost:server-zuul:8771 - registration status: 204
+2019-05-27 08:17:00.124  INFO 18332 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8771 (http) with context path ''
+2019-05-27 08:17:00.125  INFO 18332 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8771
+2019-05-27 08:17:00.126  INFO 18332 --- [main] c.e.serverzuul.ServerZuulApplication     : Started ServerZuulApplication in 9.095 seconds (JVM running for 10.303)
+2019-05-27 08:17:00.699  INFO 18332 --- [RMI TCP Connection(6)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-05-27 08:17:00.700  INFO 18332 --- [RMI TCP Connection(6)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-05-27 08:17:00.706  INFO 18332 --- [RMI TCP Connection(6)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2019-05-27 08:17:10.424  INFO 22852 --- [main] c.e.serverzuul.ServerZuulApplication     : The following profiles are active: dev
+2019-05-27 08:17:10.901  WARN 22852 --- [main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2019-05-27 08:17:10.907  WARN 22852 --- [main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'hystrix.stream' contains invalid characters, please migrate to a valid format.
+2019-05-27 08:17:11.019  INFO 22852 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=940fef41-28ee-35de-b373-302e3dbdf4f3
+2019-05-27 08:17:11.143  INFO 22852 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$c58aaebb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-05-27 08:17:11.304  INFO 22852 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8772 (http)
+2019-05-27 08:17:11.319  INFO 22852 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-05-27 08:17:11.320  INFO 22852 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2019-05-27 08:17:11.499  INFO 22852 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-05-27 08:17:11.499  INFO 22852 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1064 ms
+2019-05-27 08:17:11.568  WARN 22852 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-05-27 08:17:11.568  INFO 22852 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-05-27 08:17:11.574  INFO 22852 --- [main] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@285c6918
+2019-05-27 08:17:13.013  INFO 22852 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2019-05-27 08:17:14.516  INFO 22852 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2019-05-27 08:17:14.699  INFO 22852 --- [main] o.s.b.a.e.web.ServletEndpointRegistrar   : Registered '/actuator/hystrix.stream' to hystrix.stream-actuator-endpoint
+2019-05-27 08:17:14.762  WARN 22852 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-05-27 08:17:14.763  INFO 22852 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-05-27 08:17:14.887  INFO 22852 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-05-27 08:17:15.692  INFO 22852 --- [main] o.s.c.n.zuul.ZuulFilterInitializer       : Starting filter initializer
+2019-05-27 08:17:15.703  INFO 22852 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 23 endpoint(s) beneath base path '/actuator'
+2019-05-27 08:17:15.764  INFO 22852 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2019-05-27 08:17:15.789  INFO 22852 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2019-05-27 08:17:15.822  INFO 22852 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2019-05-27 08:17:15.823  INFO 22852 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2019-05-27 08:17:15.896  INFO 22852 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2019-05-27 08:17:15.896  INFO 22852 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2019-05-27 08:17:16.018  INFO 22852 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-05-27 08:17:16.255  INFO 22852 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2019-05-27 08:17:16.255  INFO 22852 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2019-05-27 08:17:16.255  INFO 22852 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2019-05-27 08:17:16.256  INFO 22852 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2019-05-27 08:17:16.256  INFO 22852 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2019-05-27 08:17:16.257  INFO 22852 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2019-05-27 08:17:16.257  INFO 22852 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2019-05-27 08:17:16.349  INFO 22852 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2019-05-27 08:17:16.352  INFO 22852 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 10
+2019-05-27 08:17:16.353  INFO 22852 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2019-05-27 08:17:16.356  INFO 22852 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1558916236355 with initial instances count: 3
+2019-05-27 08:17:16.357  INFO 22852 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application SERVER-ZUUL with eureka with status UP
+2019-05-27 08:17:16.358  INFO 22852 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1558916236358, current=UP, previous=STARTING]
+2019-05-27 08:17:16.360  INFO 22852 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SERVER-ZUUL/localhost:server-zuul:8772: registering service...
+2019-05-27 08:17:16.390  INFO 22852 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SERVER-ZUUL/localhost:server-zuul:8772 - registration status: 204
+2019-05-27 08:17:16.396  INFO 22852 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8772 (http) with context path ''
+2019-05-27 08:17:16.397  INFO 22852 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8772
+2019-05-27 08:17:16.398  INFO 22852 --- [main] c.e.serverzuul.ServerZuulApplication     : Started ServerZuulApplication in 9.569 seconds (JVM running for 10.436)
+2019-05-27 08:17:16.891  INFO 22852 --- [RMI TCP Connection(8)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-05-27 08:17:16.891  INFO 22852 --- [RMI TCP Connection(8)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-05-27 08:17:16.898  INFO 22852 --- [RMI TCP Connection(8)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2019-05-27 08:17:27.385  WARN 22852 --- [http-nio-8772-exec-1] com.example.serverzuul.custom.MyFilter   : token is empty!
+2019-05-27 08:17:27.386  INFO 22852 --- [http-nio-8772-exec-1] com.example.serverzuul.custom.MyFilter   : ok
+2019-05-27 08:17:27.504  INFO 22852 --- [http-nio-8772-exec-1] c.netflix.config.ChainedDynamicProperty  : Flipping property: service-2.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2019-05-27 08:17:27.529  INFO 22852 --- [http-nio-8772-exec-1] c.n.u.concurrent.ShutdownEnabledTimer    : Shutdown hook installed for: NFLoadBalancer-PingTimer-service-2
+2019-05-27 08:17:27.529  INFO 22852 --- [http-nio-8772-exec-1] c.netflix.loadbalancer.BaseLoadBalancer  : Client: service-2 instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=service-2,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+2019-05-27 08:17:27.535  INFO 22852 --- [http-nio-8772-exec-1] c.n.l.DynamicServerListLoadBalancer      : Using serverListUpdater PollingServerListUpdater
+2019-05-27 08:17:27.553  INFO 22852 --- [http-nio-8772-exec-1] c.netflix.config.ChainedDynamicProperty  : Flipping property: service-2.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2019-05-27 08:17:27.556  INFO 22852 --- [http-nio-8772-exec-1] c.n.l.DynamicServerListLoadBalancer      : DynamicServerListLoadBalancer for client service-2 initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=service-2,current list of Servers=[192.168.96.1:8766, 192.168.96.1:8765],Load balancer stats=Zone stats: {defaultzone=[Zone:defaultzone;	Instance count:2;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
+},Server stats: [[Server:192.168.96.1:8765;	Zone:defaultZone;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 08:00:00 CST 1970;	First connection made: Thu Jan 01 08:00:00 CST 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+, [Server:192.168.96.1:8766;	Zone:defaultZone;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 08:00:00 CST 1970;	First connection made: Thu Jan 01 08:00:00 CST 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+]}ServerList:org.springframework.cloud.netflix.ribbon.eureka.DomainExtractingServerList@3a71a284
+2019-05-27 08:17:28.539  INFO 22852 --- [PollingServerListUpdater-0] c.netflix.config.ChainedDynamicProperty  : Flipping property: service-2.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2019-05-27 08:17:29.253  WARN 22852 --- [http-nio-8772-exec-3] com.example.serverzuul.custom.MyFilter   : token is empty!
+2019-05-27 08:17:29.253  INFO 22852 --- [http-nio-8772-exec-3] com.example.serverzuul.custom.MyFilter   : ok
+2019-05-27 08:17:30.774  WARN 18332 --- [http-nio-8771-exec-1] com.example.serverzuul.custom.MyFilter   : token is empty!
+2019-05-27 08:17:30.775  INFO 18332 --- [http-nio-8771-exec-1] com.example.serverzuul.custom.MyFilter   : ok
+2019-05-27 08:17:30.878  INFO 18332 --- [http-nio-8771-exec-1] c.netflix.config.ChainedDynamicProperty  : Flipping property: service-1.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2019-05-27 08:17:30.897  INFO 18332 --- [http-nio-8771-exec-1] c.n.u.concurrent.ShutdownEnabledTimer    : Shutdown hook installed for: NFLoadBalancer-PingTimer-service-1
+2019-05-27 08:17:30.898  INFO 18332 --- [http-nio-8771-exec-1] c.netflix.loadbalancer.BaseLoadBalancer  : Client: service-1 instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=service-1,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+2019-05-27 08:17:30.902  INFO 18332 --- [http-nio-8771-exec-1] c.n.l.DynamicServerListLoadBalancer      : Using serverListUpdater PollingServerListUpdater
+2019-05-27 08:17:30.916  INFO 18332 --- [http-nio-8771-exec-1] c.netflix.config.ChainedDynamicProperty  : Flipping property: service-1.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2019-05-27 08:17:30.917  INFO 18332 --- [http-nio-8771-exec-1] c.n.l.DynamicServerListLoadBalancer      : DynamicServerListLoadBalancer for client service-1 initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=service-1,current list of Servers=[192.168.96.1:8764],Load balancer stats=Zone stats: {defaultzone=[Zone:defaultzone;	Instance count:1;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
+},Server stats: [[Server:192.168.96.1:8764;	Zone:defaultZone;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 08:00:00 CST 1970;	First connection made: Thu Jan 01 08:00:00 CST 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+]}ServerList:org.springframework.cloud.netflix.ribbon.eureka.DomainExtractingServerList@49a23a40
+2019-05-27 08:17:31.907  INFO 18332 --- [PollingServerListUpdater-0] c.netflix.config.ChainedDynamicProperty  : Flipping property: service-1.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2019-05-27 08:17:32.022  WARN 18332 --- [http-nio-8771-exec-2] com.example.serverzuul.custom.MyFilter   : token is empty!
+2019-05-27 08:17:32.023  INFO 18332 --- [http-nio-8771-exec-2] com.example.serverzuul.custom.MyFilter   : ok
+2019-05-27 08:21:59.987  INFO 18332 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-05-27 08:22:16.260  INFO 22852 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-05-27 08:26:59.998  INFO 18332 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-05-27 08:27:16.263  INFO 22852 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-05-27 08:32:00.003  INFO 18332 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-05-27 08:32:16.273  INFO 22852 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-05-27 08:37:00.006  INFO 18332 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-05-27 08:37:16.277  INFO 22852 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-05-27 08:42:00.009  INFO 18332 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-05-27 08:42:16.282  INFO 22852 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-05-27 08:47:00.013  INFO 18332 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-05-27 08:47:16.286  INFO 22852 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-05-27 08:52:00.016  INFO 18332 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-05-27 08:52:16.293  INFO 22852 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-05-27 08:57:00.019  INFO 18332 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-05-27 08:57:16.297  INFO 22852 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-05-27 09:02:00.021  INFO 18332 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-05-27 09:02:16.300  INFO 22852 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-05-27 09:07:00.024  INFO 18332 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-05-27 09:07:16.306  INFO 22852 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-05-27 09:07:18.628  WARN 22852 --- [http-nio-8772-exec-4] com.example.serverzuul.custom.MyFilter   : token is empty!
+2019-05-27 09:07:18.630  INFO 22852 --- [http-nio-8772-exec-4] com.example.serverzuul.custom.MyFilter   : ok
+2019-05-27 09:07:27.704  WARN 18332 --- [http-nio-8771-exec-10] com.example.serverzuul.custom.MyFilter   : token is empty!
+2019-05-27 09:07:27.705  INFO 18332 --- [http-nio-8771-exec-10] com.example.serverzuul.custom.MyFilter   : ok
+2019-05-27 09:07:27.773  INFO 18332 --- [http-nio-8771-exec-10] c.netflix.config.ChainedDynamicProperty  : Flipping property: service-2.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2019-05-27 09:07:27.776  INFO 18332 --- [http-nio-8771-exec-10] c.n.u.concurrent.ShutdownEnabledTimer    : Shutdown hook installed for: NFLoadBalancer-PingTimer-service-2
+2019-05-27 09:07:27.776  INFO 18332 --- [http-nio-8771-exec-10] c.netflix.loadbalancer.BaseLoadBalancer  : Client: service-2 instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=service-2,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+2019-05-27 09:07:27.778  INFO 18332 --- [http-nio-8771-exec-10] c.n.l.DynamicServerListLoadBalancer      : Using serverListUpdater PollingServerListUpdater
+2019-05-27 09:07:27.779  INFO 18332 --- [http-nio-8771-exec-10] c.netflix.config.ChainedDynamicProperty  : Flipping property: service-2.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2019-05-27 09:07:27.781  INFO 18332 --- [http-nio-8771-exec-10] c.n.l.DynamicServerListLoadBalancer      : DynamicServerListLoadBalancer for client service-2 initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=service-2,current list of Servers=[192.168.96.1:8766, 192.168.96.1:8765],Load balancer stats=Zone stats: {defaultzone=[Zone:defaultzone;	Instance count:2;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
+},Server stats: [[Server:192.168.96.1:8765;	Zone:defaultZone;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 08:00:00 CST 1970;	First connection made: Thu Jan 01 08:00:00 CST 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+, [Server:192.168.96.1:8766;	Zone:defaultZone;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 08:00:00 CST 1970;	First connection made: Thu Jan 01 08:00:00 CST 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+]}ServerList:org.springframework.cloud.netflix.ribbon.eureka.DomainExtractingServerList@6763cd88
+2019-05-27 09:07:28.608  WARN 22852 --- [http-nio-8772-exec-5] com.example.serverzuul.custom.MyFilter   : token is empty!
+2019-05-27 09:07:28.610  INFO 22852 --- [http-nio-8772-exec-5] com.example.serverzuul.custom.MyFilter   : ok
+2019-05-27 09:07:28.781  INFO 18332 --- [PollingServerListUpdater-1] c.netflix.config.ChainedDynamicProperty  : Flipping property: service-2.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2019-05-27 09:07:29.473  WARN 18332 --- [http-nio-8771-exec-1] com.example.serverzuul.custom.MyFilter   : token is empty!
+2019-05-27 09:07:29.473  INFO 18332 --- [http-nio-8771-exec-1] com.example.serverzuul.custom.MyFilter   : ok
+2019-05-27 09:07:30.089  WARN 22852 --- [http-nio-8772-exec-6] com.example.serverzuul.custom.MyFilter   : token is empty!
+2019-05-27 09:07:30.090  INFO 22852 --- [http-nio-8772-exec-6] com.example.serverzuul.custom.MyFilter   : ok
+2019-05-27 09:07:30.700  WARN 18332 --- [http-nio-8771-exec-2] com.example.serverzuul.custom.MyFilter   : token is empty!
+2019-05-27 09:07:30.701  INFO 18332 --- [http-nio-8771-exec-2] com.example.serverzuul.custom.MyFilter   : ok
+2019-05-27 09:07:31.301  WARN 22852 --- [http-nio-8772-exec-7] com.example.serverzuul.custom.MyFilter   : token is empty!
+2019-05-27 09:07:31.302  INFO 22852 --- [http-nio-8772-exec-7] com.example.serverzuul.custom.MyFilter   : ok
+2019-05-27 09:07:31.828  WARN 18332 --- [http-nio-8771-exec-3] com.example.serverzuul.custom.MyFilter   : token is empty!
+2019-05-27 09:07:31.829  INFO 18332 --- [http-nio-8771-exec-3] com.example.serverzuul.custom.MyFilter   : ok
+2019-05-27 09:07:32.326  WARN 22852 --- [http-nio-8772-exec-8] com.example.serverzuul.custom.MyFilter   : token is empty!
+2019-05-27 09:07:32.327  INFO 22852 --- [http-nio-8772-exec-8] com.example.serverzuul.custom.MyFilter   : ok
+2019-05-27 09:07:32.767  WARN 18332 --- [http-nio-8771-exec-4] com.example.serverzuul.custom.MyFilter   : token is empty!
+2019-05-27 09:07:32.768  INFO 18332 --- [http-nio-8771-exec-4] com.example.serverzuul.custom.MyFilter   : ok
+2019-05-27 09:07:33.151  WARN 22852 --- [http-nio-8772-exec-9] com.example.serverzuul.custom.MyFilter   : token is empty!
+2019-05-27 09:07:33.153  INFO 22852 --- [http-nio-8772-exec-9] com.example.serverzuul.custom.MyFilter   : ok
+2019-05-27 09:07:33.518  WARN 18332 --- [http-nio-8771-exec-5] com.example.serverzuul.custom.MyFilter   : token is empty!
+2019-05-27 09:07:33.518  INFO 18332 --- [http-nio-8771-exec-5] com.example.serverzuul.custom.MyFilter   : ok
+2019-05-27 09:07:33.857  WARN 22852 --- [http-nio-8772-exec-10] com.example.serverzuul.custom.MyFilter   : token is empty!
+2019-05-27 09:07:33.857  INFO 22852 --- [http-nio-8772-exec-10] com.example.serverzuul.custom.MyFilter   : ok
+2019-05-27 09:07:34.229  WARN 18332 --- [http-nio-8771-exec-6] com.example.serverzuul.custom.MyFilter   : token is empty!
+2019-05-27 09:07:34.229  INFO 18332 --- [http-nio-8771-exec-6] com.example.serverzuul.custom.MyFilter   : ok
+2019-05-27 09:07:34.548  WARN 22852 --- [http-nio-8772-exec-1] com.example.serverzuul.custom.MyFilter   : token is empty!
+2019-05-27 09:07:34.548  INFO 22852 --- [http-nio-8772-exec-1] com.example.serverzuul.custom.MyFilter   : ok
+2019-05-27 09:07:34.899  WARN 18332 --- [http-nio-8771-exec-7] com.example.serverzuul.custom.MyFilter   : token is empty!
+2019-05-27 09:07:34.899  INFO 18332 --- [http-nio-8771-exec-7] com.example.serverzuul.custom.MyFilter   : ok
+2019-05-27 09:07:35.217  WARN 22852 --- [http-nio-8772-exec-3] com.example.serverzuul.custom.MyFilter   : token is empty!
+2019-05-27 09:07:35.218  INFO 22852 --- [http-nio-8772-exec-3] com.example.serverzuul.custom.MyFilter   : ok
+2019-05-27 09:07:35.579  WARN 18332 --- [http-nio-8771-exec-8] com.example.serverzuul.custom.MyFilter   : token is empty!
+2019-05-27 09:07:35.579  INFO 18332 --- [http-nio-8771-exec-8] com.example.serverzuul.custom.MyFilter   : ok
+2019-05-27 09:07:35.915  WARN 22852 --- [http-nio-8772-exec-2] com.example.serverzuul.custom.MyFilter   : token is empty!
+2019-05-27 09:07:35.915  INFO 22852 --- [http-nio-8772-exec-2] com.example.serverzuul.custom.MyFilter   : ok
+2019-05-27 09:07:36.372  WARN 18332 --- [http-nio-8771-exec-9] com.example.serverzuul.custom.MyFilter   : token is empty!
+2019-05-27 09:07:36.372  INFO 18332 --- [http-nio-8771-exec-9] com.example.serverzuul.custom.MyFilter   : ok
+2019-05-27 09:12:00.026  INFO 18332 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-05-27 09:12:16.310  INFO 22852 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-05-27 09:17:00.027  INFO 18332 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-05-27 09:17:16.315  INFO 22852 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-05-27 09:22:00.029  INFO 18332 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-05-27 09:22:16.319  INFO 22852 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-05-27 09:27:00.031  INFO 18332 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-05-27 09:27:16.322  INFO 22852 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-05-27 09:27:29.912  WARN 22852 --- [http-nio-8772-exec-4] com.example.serverzuul.custom.MyFilter   : token is empty!
+2019-05-27 09:27:29.913  INFO 22852 --- [http-nio-8772-exec-4] com.example.serverzuul.custom.MyFilter   : ok
+2019-05-27 09:32:00.033  INFO 18332 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-05-27 09:32:16.325  INFO 22852 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-05-27 09:37:00.034  INFO 18332 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-05-27 09:37:16.328  INFO 22852 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-05-27 09:42:00.035  INFO 18332 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-05-27 09:42:16.332  INFO 22852 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-05-27 09:47:00.037  INFO 18332 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-05-27 09:47:16.336  INFO 22852 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-05-27 09:52:00.040  INFO 18332 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-05-27 09:52:16.338  INFO 22852 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-05-27 09:57:00.041  INFO 18332 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-05-27 09:57:16.342  INFO 22852 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-05-27 10:02:00.043  INFO 18332 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-05-27 10:02:16.345  INFO 22852 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-05-27 10:07:00.045  INFO 18332 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-05-27 10:07:16.348  INFO 22852 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-05-27 10:12:00.047  INFO 18332 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-05-27 10:12:16.353  INFO 22852 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-05-27 10:17:00.048  INFO 18332 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-05-27 10:17:16.357  INFO 22852 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-05-27 10:22:00.050  INFO 18332 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-05-27 10:22:16.361  INFO 22852 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-05-27 10:27:00.052  INFO 18332 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-05-27 10:27:16.365  INFO 22852 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-05-27 10:32:00.053  INFO 18332 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-05-27 10:32:16.370  INFO 22852 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-05-27 10:37:00.054  INFO 18332 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-05-27 10:37:16.377  INFO 22852 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-05-27 10:42:00.056  INFO 18332 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-05-27 10:42:16.382  INFO 22852 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-05-27 10:47:00.057  INFO 18332 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-05-27 10:47:16.387  INFO 22852 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-05-27 10:52:00.059  INFO 18332 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-05-27 10:52:16.391  INFO 22852 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-05-27 10:57:00.061  INFO 18332 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-05-27 10:57:16.395  INFO 22852 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-05-27 11:02:00.062  INFO 18332 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-05-27 11:02:16.398  INFO 22852 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-05-27 11:07:00.064  INFO 18332 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-05-27 11:07:16.404  INFO 22852 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-05-27 11:12:00.065  INFO 18332 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-05-27 11:12:16.407  INFO 22852 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-05-27 11:17:00.067  INFO 18332 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-05-27 11:17:16.409  INFO 22852 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-05-27 11:19:20.839  WARN 22852 --- [http-nio-8772-exec-5] com.example.serverzuul.custom.MyFilter   : token is empty!
+2019-05-27 11:19:20.840  INFO 22852 --- [http-nio-8772-exec-5] com.example.serverzuul.custom.MyFilter   : ok

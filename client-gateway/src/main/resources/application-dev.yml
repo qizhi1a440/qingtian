@@ -1,0 +1,54 @@
+server:
+  port: 8888
+
+eureka:
+  instance:
+    leaseRenewalIntervalInSeconds: 10
+    health-check-url-path: /actuator/health
+    prefer-ip-address: true
+#    metadata-map:
+#      user.name:  ${spring.security.user.name}
+#      user.password:  ${spring.security.user.password}
+  client:
+    registryFetchIntervalSeconds: 5
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+
+spring:
+  application:
+    name: client-gateway
+  cloud:
+    gateway:
+      routes:
+        - id: service-business
+          #uri: http://localhost:8760
+          uri: lb://service-business
+          order: -0
+          predicates:
+            - Path=/foooo/**
+          filters:
+            - StripPrefix=1
+
+        - id: service-1
+          #uri: http://localhost:8764
+          uri: lb://service-1
+          order: -0
+          predicates:
+            - Path=/foo/**
+          filters:
+            - StripPrefix=1
+
+        - id: service-2
+          #uri: http://localhost:8765
+          uri: lb://service-2
+          order: -0
+          predicates:
+            - Path=/fooo/**
+          filters:
+            - StripPrefix=1
+
+
+
+
+
+

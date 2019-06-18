@@ -1,0 +1,68 @@
+spring:
+  application:
+    name: server-zuul
+  zipkin:
+    base-url: http://zipkin-service:9411
+  sleuth:
+    sampler:
+      probability: 1.0
+# sleuth.sampler.probability 是监控的百分比，默认的是0.1表示10%,这里给1.0表示全部监控
+# spring.zipkin.base-url：是zipkin-server的服务路径
+#  security:
+#    user:
+#      name: "client"
+#      password: "client"
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+logging:
+  file: var/log/client-gateway-zuul.log
+
+server:
+  port: 8771
+eureka:
+  instance:
+    leaseRenewalIntervalInSeconds: 10
+    health-check-url-path: /actuator/health
+    prefer-ip-address: true
+#    metadata-map:
+#      user.name:  ${spring.security.user.name}
+#      user.password:  ${spring.security.user.password}
+  client:
+    registry-fetch-interval-seconds: 5
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+zuul:
+  routes:
+    service-1api:
+      path: /hiapi/**
+      serviceId: service-1
+    service-2api:
+      path: /haapi/**
+      serviceId: service-2
+  prefix: /v1
+
+  # 这里解决 Thread Pools 一直处于 loading中
+  # 这是由于Zuul默认会使用信号量来实现隔离，只有通过Hystrix配置把隔离机制改成为线程池的方式才能够得以展示
+  # https://blog.csdn.net/u010826617/article/details/82260873
+  # SEMAPHORE - 它在调用线程上执行，并发请求受信号量计数的限制(Zuul默认此策略)
+  # THREAD - 它在一个单独的线程上执行，并发请求受到线程池中线程数的限制
+  thread-pool:
+    use-separate-thread-pools: true # 每个路由使用独立的线程池
+  ribbon-isolation-strategy: thread # 设置Hystrix隔离策略为线程池
+
+
+
+#hystrix:
+#  command:
+#    default:
+#      execution:
+#        isolation:
+#          thread:
+#            timeoutInMilliseconds: 2000
+
+
+
+

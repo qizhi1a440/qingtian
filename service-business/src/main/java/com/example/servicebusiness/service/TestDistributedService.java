@@ -1,7 +1,7 @@
 package com.example.servicebusiness.service;
 
 
-import io.seata.spring.annotation.GlobalTransactional;
+import com.codingapi.txlcn.tc.annotation.LcnTransaction;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -14,7 +14,8 @@ public class TestDistributedService {
     @Autowired
     private HaService haService;
 
-    @GlobalTransactional()
+
+    @LcnTransaction
     public String test(String name) {
         String ha=null;
         boolean flag=false;

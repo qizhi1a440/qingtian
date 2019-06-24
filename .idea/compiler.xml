@@ -15,6 +15,8 @@
         <module name="service-1" />
         <module name="service-2" />
         <module name="service-business" />
+        <module name="tx-manager" />
+        <module name="tx-manager-1" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

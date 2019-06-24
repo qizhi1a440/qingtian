@@ -11,6 +11,8 @@
         <option value="$PROJECT_DIR$/server-zuul/pom.xml" />
         <option value="$PROJECT_DIR$/client-gateway/pom.xml" />
         <option value="$PROJECT_DIR$/service-business/pom.xml" />
+        <option value="$PROJECT_DIR$/tx-manager/pom.xml" />
+        <option value="$PROJECT_DIR$/tx-manager-1/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

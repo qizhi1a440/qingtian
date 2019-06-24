@@ -12,7 +12,7 @@ spring:
     username: root
     password: antaikeji2018
     # 使用druid数据源
-    type: com.alibaba.druid.pool.DruidDataSource
+    #type: com.alibaba.druid.pool.DruidDataSource
   #使用redis sentinel模式
   redis:
     #host: 192.168.1.127
@@ -21,7 +21,7 @@ spring:
     password: 123456
     #timeout: 30000
     sentinel:
-      nodes: 192.168.1.147:26382,192.168.1.147:26380,192.168.1.147:26381
+      nodes: 192.168.33.128:26382,192.168.33.128:26380,192.168.33.128:26381
       master: mymaster
 
 redisson:

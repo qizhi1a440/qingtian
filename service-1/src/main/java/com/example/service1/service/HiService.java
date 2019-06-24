@@ -1,10 +1,11 @@
 package com.example.service1.service;
 
+import com.codingapi.txlcn.tc.annotation.DTXPropagation;
+import com.codingapi.txlcn.tc.annotation.LcnTransaction;
+import com.codingapi.txlcn.tc.annotation.TccTransaction;
+import com.codingapi.txlcn.tc.annotation.TxcTransaction;
 import com.example.service1.api.HiFeign;
-import com.example.service1.dto.HiDTO;
 import com.example.service1.mapper.HiMapper;
-import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
-import io.seata.spring.annotation.GlobalLock;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -20,8 +21,8 @@ public class HiService {
     private HiMapper hiMapper;
 
     //@HystrixCommand(fallbackMethod = "errInfo")
-    //@GlobalLock
-    //@Transactional(rollbackFor = Exception.class)
+    @LcnTransaction(propagation = DTXPropagation.SUPPORTS)
+    @Transactional
     public String hi(String name) {
 
         hiMapper.insertHi(name);

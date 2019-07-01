@@ -11,7 +11,12 @@ spring:
     driver-class-name: com.mysql.jdbc.Driver
     username: root
     password: '{cipher}7f0a0a139ab258bdd1edce54d45a918cdb262739a14365476e6c9a4d19c5889a'
-    # 使用druid数据源
+    # 使用druid数据源cloud:
+                    #    config:
+                    #      discovery:
+                    #        enabled: true
+                    #        service-id: CONFIG  # 注册中心的服务名
+                    #      profile: dev  # 指定配置文件的环境
     #type: com.alibaba.druid.pool.DruidDataSource
 
 

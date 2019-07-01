@@ -547,3 +547,736 @@ Caused by: java.lang.IllegalStateException: There is no normal TM.
 	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:804) [spring-boot-2.1.5.RELEASE.jar:2.1.5.RELEASE]
 	... 5 common frames omitted
 
+2019-07-01 10:23:08.553  INFO 5748 --- [main] c.example.service1.Service1Application   : The following profiles are active: dev
+2019-07-01 10:23:09.799  WARN 5748 --- [main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2019-07-01 10:23:09.814  WARN 5748 --- [main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'hystrix.stream' contains invalid characters, please migrate to a valid format.
+2019-07-01 10:23:10.067  INFO 5748 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=27e986a0-9b8d-37d9-aee1-6a5dadb04865
+2019-07-01 10:23:10.089  INFO 5748 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.example.service1.api.HiFeign' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-01 10:23:10.254  INFO 5748 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$7e2e5443] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-01 10:23:10.448  INFO 5748 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$9a485740] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-01 10:23:10.825  INFO 5748 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8764 (http)
+2019-07-01 10:23:10.860  INFO 5748 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-07-01 10:23:10.860  INFO 5748 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2019-07-01 10:23:11.014  INFO 5748 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-07-01 10:23:11.014  INFO 5748 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2435 ms
+2019-07-01 10:23:11.158  WARN 5748 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-07-01 10:23:11.158  INFO 5748 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-07-01 10:23:11.167  INFO 5748 --- [main] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@13f40d71
+2019-07-01 10:23:12.909  INFO 5748 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2019-07-01 10:23:13.219  INFO 5748 --- [main] o.s.b.a.e.web.ServletEndpointRegistrar   : Registered '/actuator/hystrix.stream' to hystrix.stream-actuator-endpoint
+2019-07-01 10:23:13.673  WARN 5748 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-07-01 10:23:13.673  INFO 5748 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-07-01 10:23:13.819  INFO 5748 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-07-01 10:23:15.428  INFO 5748 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2019-07-01 10:23:15.600  INFO 5748 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 21 endpoint(s) beneath base path '/actuator'
+2019-07-01 10:23:15.836  INFO 5748 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2019-07-01 10:23:15.922  INFO 5748 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2019-07-01 10:23:16.490  INFO 5748 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2019-07-01 10:23:16.490  INFO 5748 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2019-07-01 10:23:16.737  INFO 5748 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2019-07-01 10:23:16.737  INFO 5748 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2019-07-01 10:23:16.964  INFO 5748 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-07-01 10:23:17.181  INFO 5748 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2019-07-01 10:23:17.182  INFO 5748 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2019-07-01 10:23:17.182  INFO 5748 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2019-07-01 10:23:17.182  INFO 5748 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2019-07-01 10:23:17.182  INFO 5748 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2019-07-01 10:23:17.182  INFO 5748 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2019-07-01 10:23:17.183  INFO 5748 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2019-07-01 10:23:17.354  INFO 5748 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2019-07-01 10:23:17.356  INFO 5748 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 10
+2019-07-01 10:23:17.358  INFO 5748 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2019-07-01 10:23:17.361  INFO 5748 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1561947797360 with initial instances count: 1
+2019-07-01 10:23:17.363  INFO 5748 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application SERVICE-1 with eureka with status UP
+2019-07-01 10:23:17.364  INFO 5748 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1561947797364, current=UP, previous=STARTING]
+2019-07-01 10:23:17.365  INFO 5748 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SERVICE-1/localhost:service-1:8764: registering service...
+2019-07-01 10:23:17.409  INFO 5748 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SERVICE-1/localhost:service-1:8764 - registration status: 204
+2019-07-01 10:23:17.412  INFO 5748 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8764 (http) with context path ''
+2019-07-01 10:23:17.413  INFO 5748 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8764
+2019-07-01 10:23:17.415  INFO 5748 --- [main] c.example.service1.Service1Application   : Started Service1Application in 12.415 seconds (JVM running for 14.024)
+2019-07-01 10:23:17.695  INFO 5748 --- [RMI TCP Connection(7)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-07-01 10:23:17.697  INFO 5748 --- [RMI TCP Connection(7)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-07-01 10:23:17.700  INFO 5748 --- [RMI TCP Connection(8)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-07-01 10:23:17.729  INFO 5748 --- [RMI TCP Connection(7)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 31 ms
+2019-07-01 10:23:18.153  INFO 5748 --- [RMI TCP Connection(8)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-07-01 10:28:17.186  INFO 5748 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-07-01 10:33:17.189  INFO 5748 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-07-01 10:38:17.192  INFO 5748 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-07-01 10:41:19.547  INFO 21324 --- [main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:8888
+2019-07-01 10:41:20.651  INFO 21324 --- [main] c.c.c.ConfigServicePropertySourceLocator : Connect Timeout Exception on Url - http://localhost:8888. Will be trying the next url if available
+2019-07-01 10:41:20.652  WARN 21324 --- [main] c.c.c.ConfigServicePropertySourceLocator : Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/service-1/haha/dev": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
+2019-07-01 10:41:20.655  INFO 21324 --- [main] c.example.service1.Service1Application   : The following profiles are active: dev
+2019-07-01 10:41:21.283  WARN 21324 --- [main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2019-07-01 10:41:21.294  WARN 21324 --- [main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'hystrix.stream' contains invalid characters, please migrate to a valid format.
+2019-07-01 10:41:21.443  INFO 21324 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=db1935bd-af98-3136-903f-9e5cb40f4635
+2019-07-01 10:41:21.457  INFO 21324 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.example.service1.api.HiFeign' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-01 10:41:21.548  INFO 21324 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$3d937bb7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-01 10:41:21.633  INFO 21324 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$59ad7eb4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-01 10:41:21.891  INFO 21324 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8764 (http)
+2019-07-01 10:41:21.909  INFO 21324 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-07-01 10:41:21.909  INFO 21324 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2019-07-01 10:41:22.035  INFO 21324 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-07-01 10:41:22.035  INFO 21324 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1363 ms
+2019-07-01 10:41:22.127  WARN 21324 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-07-01 10:41:22.128  INFO 21324 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-07-01 10:41:22.136  INFO 21324 --- [main] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@71369e1a
+2019-07-01 10:41:23.618  INFO 21324 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2019-07-01 10:41:23.890  INFO 21324 --- [main] o.s.b.a.e.web.ServletEndpointRegistrar   : Registered '/actuator/hystrix.stream' to hystrix.stream-actuator-endpoint
+2019-07-01 10:41:24.177  WARN 21324 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-07-01 10:41:24.177  INFO 21324 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-07-01 10:41:24.310  INFO 21324 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-07-01 10:41:25.922  INFO 21324 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2019-07-01 10:41:25.976  INFO 21324 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 21 endpoint(s) beneath base path '/actuator'
+2019-07-01 10:41:26.062  INFO 21324 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2019-07-01 10:41:26.094  INFO 21324 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2019-07-01 10:41:26.445  INFO 21324 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2019-07-01 10:41:26.446  INFO 21324 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2019-07-01 10:41:26.549  INFO 21324 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2019-07-01 10:41:26.550  INFO 21324 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2019-07-01 10:41:26.752  INFO 21324 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-07-01 10:41:26.955  INFO 21324 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2019-07-01 10:41:26.956  INFO 21324 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2019-07-01 10:41:26.956  INFO 21324 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2019-07-01 10:41:26.956  INFO 21324 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2019-07-01 10:41:26.957  INFO 21324 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2019-07-01 10:41:26.957  INFO 21324 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2019-07-01 10:41:26.957  INFO 21324 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2019-07-01 10:41:27.072  INFO 21324 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2019-07-01 10:41:27.075  INFO 21324 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 10
+2019-07-01 10:41:27.077  INFO 21324 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2019-07-01 10:41:27.079  INFO 21324 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1561948887078 with initial instances count: 2
+2019-07-01 10:41:27.081  INFO 21324 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application SERVICE-1 with eureka with status UP
+2019-07-01 10:41:27.082  INFO 21324 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1561948887082, current=UP, previous=STARTING]
+2019-07-01 10:41:27.084  INFO 21324 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SERVICE-1/localhost:service-1:8764: registering service...
+2019-07-01 10:41:27.126  INFO 21324 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SERVICE-1/localhost:service-1:8764 - registration status: 204
+2019-07-01 10:41:27.129  INFO 21324 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8764 (http) with context path ''
+2019-07-01 10:41:27.130  INFO 21324 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8764
+2019-07-01 10:41:27.132  INFO 21324 --- [main] c.example.service1.Service1Application   : Started Service1Application in 10.856 seconds (JVM running for 12.269)
+2019-07-01 10:41:27.790  INFO 21324 --- [RMI TCP Connection(6)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-07-01 10:41:27.791  INFO 21324 --- [RMI TCP Connection(8)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-07-01 10:41:27.791  INFO 21324 --- [RMI TCP Connection(6)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-07-01 10:41:27.799  INFO 21324 --- [RMI TCP Connection(6)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2019-07-01 10:41:28.378  INFO 21324 --- [RMI TCP Connection(8)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-07-01 10:41:28.440  INFO 21324 --- [RMI TCP Connection(8)-127.0.0.1] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:7010/
+2019-07-01 10:41:32.609  INFO 21324 --- [RMI TCP Connection(8)-127.0.0.1] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=service-1, profiles=[haha], label=dev, version=a8baca1ea44fc63128624f5b926f4e32472dcf5b, state=null
+2019-07-01 10:43:49.912  INFO 96 --- [main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:8888
+2019-07-01 10:43:51.003  INFO 96 --- [main] c.c.c.ConfigServicePropertySourceLocator : Connect Timeout Exception on Url - http://localhost:8888. Will be trying the next url if available
+2019-07-01 10:43:51.007  WARN 96 --- [main] c.c.c.ConfigServicePropertySourceLocator : Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/service-1/haha/dev": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
+2019-07-01 10:43:51.014  INFO 96 --- [main] c.example.service1.Service1Application   : The following profiles are active: dev
+2019-07-01 10:43:51.670  WARN 96 --- [main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2019-07-01 10:43:51.681  WARN 96 --- [main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'hystrix.stream' contains invalid characters, please migrate to a valid format.
+2019-07-01 10:43:51.831  INFO 96 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=db1935bd-af98-3136-903f-9e5cb40f4635
+2019-07-01 10:43:51.845  INFO 96 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.example.service1.api.HiFeign' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-01 10:43:51.932  INFO 96 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c750f6da] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-01 10:43:52.018  INFO 96 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$e36af9d7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-01 10:43:52.279  INFO 96 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8764 (http)
+2019-07-01 10:43:52.297  INFO 96 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-07-01 10:43:52.298  INFO 96 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2019-07-01 10:43:52.416  INFO 96 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-07-01 10:43:52.416  INFO 96 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1367 ms
+2019-07-01 10:43:52.509  WARN 96 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-07-01 10:43:52.510  INFO 96 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-07-01 10:43:52.518  INFO 96 --- [main] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@7e94e331
+2019-07-01 10:43:54.013  INFO 96 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2019-07-01 10:43:54.287  INFO 96 --- [main] o.s.b.a.e.web.ServletEndpointRegistrar   : Registered '/actuator/hystrix.stream' to hystrix.stream-actuator-endpoint
+2019-07-01 10:43:54.573  WARN 96 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-07-01 10:43:54.574  INFO 96 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-07-01 10:43:54.712  INFO 96 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-07-01 10:43:56.339  INFO 96 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2019-07-01 10:43:56.406  INFO 96 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 21 endpoint(s) beneath base path '/actuator'
+2019-07-01 10:43:56.492  INFO 96 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2019-07-01 10:43:56.524  INFO 96 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2019-07-01 10:43:56.860  INFO 96 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2019-07-01 10:43:56.861  INFO 96 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2019-07-01 10:43:56.962  INFO 96 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2019-07-01 10:43:56.963  INFO 96 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2019-07-01 10:43:57.163  INFO 96 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-07-01 10:43:57.367  INFO 96 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2019-07-01 10:43:57.368  INFO 96 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2019-07-01 10:43:57.368  INFO 96 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2019-07-01 10:43:57.368  INFO 96 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2019-07-01 10:43:57.369  INFO 96 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2019-07-01 10:43:57.369  INFO 96 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2019-07-01 10:43:57.369  INFO 96 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2019-07-01 10:43:57.478  INFO 96 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2019-07-01 10:43:57.481  INFO 96 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 10
+2019-07-01 10:43:57.482  INFO 96 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2019-07-01 10:43:57.485  INFO 96 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1561949037484 with initial instances count: 2
+2019-07-01 10:43:57.487  INFO 96 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application SERVICE-1 with eureka with status UP
+2019-07-01 10:43:57.488  INFO 96 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1561949037488, current=UP, previous=STARTING]
+2019-07-01 10:43:57.490  INFO 96 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SERVICE-1/localhost:service-1:8764: registering service...
+2019-07-01 10:43:57.520  INFO 96 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SERVICE-1/localhost:service-1:8764 - registration status: 204
+2019-07-01 10:43:57.524  INFO 96 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8764 (http) with context path ''
+2019-07-01 10:43:57.526  INFO 96 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8764
+2019-07-01 10:43:57.527  INFO 96 --- [main] c.example.service1.Service1Application   : Started Service1Application in 10.892 seconds (JVM running for 12.358)
+2019-07-01 10:43:58.118  INFO 96 --- [RMI TCP Connection(10)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-07-01 10:43:58.118  INFO 96 --- [RMI TCP Connection(10)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-07-01 10:43:58.119  INFO 96 --- [RMI TCP Connection(9)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-07-01 10:43:58.128  INFO 96 --- [RMI TCP Connection(10)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
+2019-07-01 10:43:58.676  INFO 96 --- [RMI TCP Connection(9)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-07-01 10:43:58.738  INFO 96 --- [RMI TCP Connection(9)-127.0.0.1] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:7010/
+2019-07-01 10:44:03.376  INFO 96 --- [RMI TCP Connection(9)-127.0.0.1] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=service-1, profiles=[haha], label=dev, version=a8baca1ea44fc63128624f5b926f4e32472dcf5b, state=null
+2019-07-01 10:46:01.760  INFO 5256 --- [main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:7010/
+2019-07-01 10:46:05.502  INFO 5256 --- [main] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=service-1, profiles=[haha], label=dev, version=a8baca1ea44fc63128624f5b926f4e32472dcf5b, state=null
+2019-07-01 10:46:05.503  INFO 5256 --- [main] b.c.PropertySourceBootstrapConfiguration : Located property source: CompositePropertySource {name='configService', propertySources=[MapPropertySource {name='configClient'}, MapPropertySource {name='https://github.com/qizhi1a440/qingtian/config-repo/service-1-haha.yml'}, MapPropertySource {name='https://github.com/qizhi1a440/qingtian/tx-manager-1/src/main/resources/application.properties'}, MapPropertySource {name='https://github.com/qizhi1a440/qingtian/tx-manager/src/main/resources/application.properties'}, MapPropertySource {name='https://github.com/qizhi1a440/qingtian/service-business/src/main/resources/application.properties'}, MapPropertySource {name='https://github.com/qizhi1a440/qingtian/service-business/src/main/resources/application.yml'}, MapPropertySource {name='https://github.com/qizhi1a440/qingtian/service-2/src/main/resources/application.properties'}, MapPropertySource {name='https://github.com/qizhi1a440/qingtian/service-2/src/main/resources/application.yml'}, MapPropertySource {name='https://github.com/qizhi1a440/qingtian/service-1/src/main/resources/application.yml'}, MapPropertySource {name='https://github.com/qizhi1a440/qingtian/server-zuul/src/main/resources/application.yml'}, MapPropertySource {name='https://github.com/qizhi1a440/qingtian/server-eureka/src/main/resources/application.yml'}, MapPropertySource {name='https://github.com/qizhi1a440/qingtian/client-gateway/src/main/resources/application.yml'}]}
+2019-07-01 10:46:05.550  INFO 5256 --- [main] c.example.service1.Service1Application   : The following profiles are active: dev
+2019-07-01 10:46:06.154  WARN 5256 --- [main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2019-07-01 10:46:06.164  WARN 5256 --- [main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'hystrix.stream' contains invalid characters, please migrate to a valid format.
+2019-07-01 10:46:06.289  INFO 5256 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=58f7042d-b607-36f4-af51-94e1685f60ae
+2019-07-01 10:46:06.304  INFO 5256 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.example.service1.api.HiFeign' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-01 10:46:06.385  INFO 5256 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$5e9d8858] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-01 10:46:06.474  INFO 5256 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$7ab78b55] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-01 10:46:06.680  INFO 5256 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8765 (http)
+2019-07-01 10:46:06.699  INFO 5256 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-07-01 10:46:06.699  INFO 5256 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2019-07-01 10:46:06.845  INFO 5256 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-07-01 10:46:06.845  INFO 5256 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1283 ms
+2019-07-01 10:46:06.938  WARN 5256 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-07-01 10:46:06.939  INFO 5256 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-07-01 10:46:06.946  INFO 5256 --- [main] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@10e8c7a2
+2019-07-01 10:46:07.316  INFO 5256 --- [main] o.s.b.a.e.web.ServletEndpointRegistrar   : Registered '/actuator/hystrix.stream' to hystrix.stream-actuator-endpoint
+2019-07-01 10:46:07.439  WARN 5256 --- [main] lientConfigServiceBootstrapConfiguration : Could not locate configserver via discovery
+
+java.lang.IllegalStateException: No instances found of configserver (config-server)
+	at org.springframework.cloud.config.client.ConfigServerInstanceProvider.getConfigServerInstances(ConfigServerInstanceProvider.java:48) ~[spring-cloud-config-client-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.cloud.config.client.DiscoveryClientConfigServiceBootstrapConfiguration.refresh(DiscoveryClientConfigServiceBootstrapConfiguration.java:101) [spring-cloud-config-client-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.cloud.config.client.DiscoveryClientConfigServiceBootstrapConfiguration.startup(DiscoveryClientConfigServiceBootstrapConfiguration.java:87) [spring-cloud-config-client-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.cloud.config.client.DiscoveryClientConfigServiceBootstrapConfiguration.onApplicationEvent(DiscoveryClientConfigServiceBootstrapConfiguration.java:79) [spring-cloud-config-client-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172) [spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165) [spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139) [spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:402) [spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:408) [spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:408) [spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:359) [spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:896) [spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:552) [spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.cloud.context.named.NamedContextFactory.createContext(NamedContextFactory.java:136) [spring-cloud-context-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.cloud.context.named.NamedContextFactory.getContext(NamedContextFactory.java:101) [spring-cloud-context-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.cloud.context.named.NamedContextFactory.getInstance(NamedContextFactory.java:145) [spring-cloud-context-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.cloud.openfeign.FeignClientFactoryBean.get(FeignClientFactoryBean.java:220) [spring-cloud-openfeign-core-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.cloud.openfeign.FeignClientFactoryBean.feign(FeignClientFactoryBean.java:84) [spring-cloud-openfeign-core-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.cloud.openfeign.FeignClientFactoryBean.getTarget(FeignClientFactoryBean.java:257) [spring-cloud-openfeign-core-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.cloud.openfeign.FeignClientFactoryBean.getObject(FeignClientFactoryBean.java:247) [spring-cloud-openfeign-core-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.doGetObjectFromFactoryBean(FactoryBeanRegistrySupport.java:171) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.getObjectFromFactoryBean(FactoryBeanRegistrySupport.java:101) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getObjectForBeanInstance(AbstractBeanFactory.java:1674) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getObjectForBeanInstance(AbstractAutowireCapableBeanFactory.java:1249) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:257) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.addCandidateEntry(DefaultListableBeanFactory.java:1471) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1428) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1211) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1168) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:593) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1411) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:592) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1248) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1168) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:593) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1411) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:592) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:843) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877) [spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549) [spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142) ~[spring-boot-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775) ~[spring-boot-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) ~[spring-boot-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316) ~[spring-boot-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260) ~[spring-boot-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248) ~[spring-boot-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at com.example.service1.Service1Application.main(Service1Application.java:23) ~[classes/:na]
+
+2019-07-01 10:46:07.635  WARN 5256 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-07-01 10:46:07.635  INFO 5256 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-07-01 10:46:07.778  INFO 5256 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-07-01 10:46:09.439  INFO 5256 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2019-07-01 10:46:10.743  INFO 5256 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2019-07-01 10:46:10.785  INFO 5256 --- [main] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2019-07-01 10:46:10.801  INFO 5256 --- [main] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2019-07-01 10:46:10.809  INFO 5256 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 21 endpoint(s) beneath base path '/actuator'
+2019-07-01 10:46:10.894  INFO 5256 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2019-07-01 10:46:10.897  INFO 5256 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2019-07-01 10:46:10.899  INFO 5256 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2019-07-01 10:46:10.900  INFO 5256 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2019-07-01 10:46:10.900  INFO 5256 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2019-07-01 10:46:10.900  INFO 5256 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2019-07-01 10:46:10.983  INFO 5256 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-07-01 10:46:10.984  INFO 5256 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2019-07-01 10:46:10.985  INFO 5256 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2019-07-01 10:46:10.985  INFO 5256 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2019-07-01 10:46:10.985  INFO 5256 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2019-07-01 10:46:10.985  INFO 5256 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2019-07-01 10:46:10.985  INFO 5256 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2019-07-01 10:46:10.985  INFO 5256 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2019-07-01 10:46:10.987  INFO 5256 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2019-07-01 10:46:10.988  INFO 5256 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 10
+2019-07-01 10:46:10.990  INFO 5256 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2019-07-01 10:46:10.991  INFO 5256 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1561949170991 with initial instances count: 2
+2019-07-01 10:46:10.992  INFO 5256 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application SERVICE-1 with eureka with status UP
+2019-07-01 10:46:10.993  INFO 5256 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1561949170993, current=UP, previous=STARTING]
+2019-07-01 10:46:10.995  INFO 5256 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SERVICE-1/localhost:service-1:8765: registering service...
+2019-07-01 10:46:11.007  WARN 5256 --- [main] lientConfigServiceBootstrapConfiguration : Could not locate configserver via discovery
+
+java.lang.IllegalStateException: No instances found of configserver (config-server)
+	at org.springframework.cloud.config.client.ConfigServerInstanceProvider.getConfigServerInstances(ConfigServerInstanceProvider.java:48) ~[spring-cloud-config-client-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.cloud.config.client.DiscoveryClientConfigServiceBootstrapConfiguration.refresh(DiscoveryClientConfigServiceBootstrapConfiguration.java:101) [spring-cloud-config-client-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.cloud.config.client.DiscoveryClientConfigServiceBootstrapConfiguration.startup(DiscoveryClientConfigServiceBootstrapConfiguration.java:87) [spring-cloud-config-client-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.cloud.config.client.DiscoveryClientConfigServiceBootstrapConfiguration.onApplicationEvent(DiscoveryClientConfigServiceBootstrapConfiguration.java:79) [spring-cloud-config-client-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172) [spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165) [spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139) [spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:402) [spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:408) [spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:359) [spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:896) [spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:163) [spring-boot-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:552) [spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142) [spring-boot-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775) [spring-boot-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) [spring-boot-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316) [spring-boot-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260) [spring-boot-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248) [spring-boot-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at com.example.service1.Service1Application.main(Service1Application.java:23) [classes/:na]
+
+2019-07-01 10:46:11.023  INFO 5256 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SERVICE-1/localhost:service-1:8765 - registration status: 204
+2019-07-01 10:46:11.029  INFO 5256 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8765 (http) with context path ''
+2019-07-01 10:46:11.030  INFO 5256 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8765
+2019-07-01 10:46:11.031  INFO 5256 --- [main] c.example.service1.Service1Application   : Started Service1Application in 15.176 seconds (JVM running for 16.622)
+2019-07-01 10:46:11.382  INFO 5256 --- [RMI TCP Connection(4)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-07-01 10:46:11.383  INFO 5256 --- [RMI TCP Connection(9)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-07-01 10:46:11.383  INFO 5256 --- [RMI TCP Connection(9)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-07-01 10:46:11.391  INFO 5256 --- [RMI TCP Connection(9)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2019-07-01 10:46:12.029  INFO 5256 --- [RMI TCP Connection(4)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-07-01 10:46:12.073  INFO 5256 --- [RMI TCP Connection(4)-127.0.0.1] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:7010/
+2019-07-01 10:46:15.999  WARN 5256 --- [DiscoveryClient-CacheRefreshExecutor-0] lientConfigServiceBootstrapConfiguration : Could not locate configserver via discovery
+
+java.lang.IllegalStateException: No instances found of configserver (config-server)
+	at org.springframework.cloud.config.client.ConfigServerInstanceProvider.getConfigServerInstances(ConfigServerInstanceProvider.java:48) ~[spring-cloud-config-client-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.cloud.config.client.DiscoveryClientConfigServiceBootstrapConfiguration.refresh(DiscoveryClientConfigServiceBootstrapConfiguration.java:101) [spring-cloud-config-client-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.cloud.config.client.DiscoveryClientConfigServiceBootstrapConfiguration.heartbeat(DiscoveryClientConfigServiceBootstrapConfiguration.java:92) [spring-cloud-config-client-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.cloud.config.client.DiscoveryClientConfigServiceBootstrapConfiguration.onApplicationEvent(DiscoveryClientConfigServiceBootstrapConfiguration.java:82) [spring-cloud-config-client-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172) [spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165) [spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139) [spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:402) [spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:408) [spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:359) [spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.cloud.netflix.eureka.CloudEurekaClient.onCacheRefreshed(CloudEurekaClient.java:123) [spring-cloud-netflix-eureka-client-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:981) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1479) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1446) [eureka-client-1.9.8.jar:1.9.8]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_181]
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266) [na:1.8.0_181]
+	at java.util.concurrent.FutureTask.run(FutureTask.java) [na:1.8.0_181]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_181]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_181]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_181]
+
+2019-07-01 10:46:17.327  INFO 5256 --- [RMI TCP Connection(4)-127.0.0.1] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=service-1, profiles=[haha], label=dev, version=a8baca1ea44fc63128624f5b926f4e32472dcf5b, state=null
+2019-07-01 10:46:21.010  WARN 5256 --- [DiscoveryClient-CacheRefreshExecutor-0] lientConfigServiceBootstrapConfiguration : Could not locate configserver via discovery
+
+java.lang.IllegalStateException: No instances found of configserver (config-server)
+	at org.springframework.cloud.config.client.ConfigServerInstanceProvider.getConfigServerInstances(ConfigServerInstanceProvider.java:48) ~[spring-cloud-config-client-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.cloud.config.client.DiscoveryClientConfigServiceBootstrapConfiguration.refresh(DiscoveryClientConfigServiceBootstrapConfiguration.java:101) [spring-cloud-config-client-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.cloud.config.client.DiscoveryClientConfigServiceBootstrapConfiguration.heartbeat(DiscoveryClientConfigServiceBootstrapConfiguration.java:92) [spring-cloud-config-client-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.cloud.config.client.DiscoveryClientConfigServiceBootstrapConfiguration.onApplicationEvent(DiscoveryClientConfigServiceBootstrapConfiguration.java:82) [spring-cloud-config-client-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172) [spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165) [spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139) [spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:402) [spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:408) [spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:359) [spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.cloud.netflix.eureka.CloudEurekaClient.onCacheRefreshed(CloudEurekaClient.java:123) [spring-cloud-netflix-eureka-client-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:981) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1479) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1446) [eureka-client-1.9.8.jar:1.9.8]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_181]
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266) [na:1.8.0_181]
+	at java.util.concurrent.FutureTask.run(FutureTask.java) [na:1.8.0_181]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_181]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_181]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_181]
+
+2019-07-01 10:46:26.023  WARN 5256 --- [DiscoveryClient-CacheRefreshExecutor-0] lientConfigServiceBootstrapConfiguration : Could not locate configserver via discovery
+
+java.lang.IllegalStateException: No instances found of configserver (config-server)
+	at org.springframework.cloud.config.client.ConfigServerInstanceProvider.getConfigServerInstances(ConfigServerInstanceProvider.java:48) ~[spring-cloud-config-client-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.cloud.config.client.DiscoveryClientConfigServiceBootstrapConfiguration.refresh(DiscoveryClientConfigServiceBootstrapConfiguration.java:101) [spring-cloud-config-client-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.cloud.config.client.DiscoveryClientConfigServiceBootstrapConfiguration.heartbeat(DiscoveryClientConfigServiceBootstrapConfiguration.java:92) [spring-cloud-config-client-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.cloud.config.client.DiscoveryClientConfigServiceBootstrapConfiguration.onApplicationEvent(DiscoveryClientConfigServiceBootstrapConfiguration.java:82) [spring-cloud-config-client-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172) [spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165) [spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139) [spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:402) [spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:408) [spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:359) [spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.cloud.netflix.eureka.CloudEurekaClient.onCacheRefreshed(CloudEurekaClient.java:123) [spring-cloud-netflix-eureka-client-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:981) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1479) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1446) [eureka-client-1.9.8.jar:1.9.8]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_181]
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266) [na:1.8.0_181]
+	at java.util.concurrent.FutureTask.run(FutureTask.java) [na:1.8.0_181]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_181]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_181]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_181]
+
+2019-07-01 10:46:34.280  INFO 13472 --- [main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:7010/
+2019-07-01 10:46:38.489  INFO 13472 --- [main] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=service-1, profiles=[haha], label=dev, version=a8baca1ea44fc63128624f5b926f4e32472dcf5b, state=null
+2019-07-01 10:46:38.490  INFO 13472 --- [main] b.c.PropertySourceBootstrapConfiguration : Located property source: CompositePropertySource {name='configService', propertySources=[MapPropertySource {name='configClient'}, MapPropertySource {name='https://github.com/qizhi1a440/qingtian/config-repo/service-1-haha.yml'}, MapPropertySource {name='https://github.com/qizhi1a440/qingtian/tx-manager-1/src/main/resources/application.properties'}, MapPropertySource {name='https://github.com/qizhi1a440/qingtian/tx-manager/src/main/resources/application.properties'}, MapPropertySource {name='https://github.com/qizhi1a440/qingtian/service-business/src/main/resources/application.properties'}, MapPropertySource {name='https://github.com/qizhi1a440/qingtian/service-business/src/main/resources/application.yml'}, MapPropertySource {name='https://github.com/qizhi1a440/qingtian/service-2/src/main/resources/application.properties'}, MapPropertySource {name='https://github.com/qizhi1a440/qingtian/service-2/src/main/resources/application.yml'}, MapPropertySource {name='https://github.com/qizhi1a440/qingtian/service-1/src/main/resources/application.yml'}, MapPropertySource {name='https://github.com/qizhi1a440/qingtian/server-zuul/src/main/resources/application.yml'}, MapPropertySource {name='https://github.com/qizhi1a440/qingtian/server-eureka/src/main/resources/application.yml'}, MapPropertySource {name='https://github.com/qizhi1a440/qingtian/client-gateway/src/main/resources/application.yml'}]}
+2019-07-01 10:46:38.522  INFO 13472 --- [main] c.example.service1.Service1Application   : The following profiles are active: dev
+2019-07-01 10:46:39.131  WARN 13472 --- [main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2019-07-01 10:46:39.142  WARN 13472 --- [main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'hystrix.stream' contains invalid characters, please migrate to a valid format.
+2019-07-01 10:46:39.272  INFO 13472 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=58f7042d-b607-36f4-af51-94e1685f60ae
+2019-07-01 10:46:39.287  INFO 13472 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.example.service1.api.HiFeign' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-01 10:46:39.369  INFO 13472 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$9c23726a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-01 10:46:39.460  INFO 13472 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$b83d7567] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-01 10:46:39.655  INFO 13472 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8765 (http)
+2019-07-01 10:46:39.674  INFO 13472 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-07-01 10:46:39.674  INFO 13472 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2019-07-01 10:46:39.812  INFO 13472 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-07-01 10:46:39.813  INFO 13472 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1278 ms
+2019-07-01 10:46:39.907  WARN 13472 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-07-01 10:46:39.907  INFO 13472 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-07-01 10:46:39.914  INFO 13472 --- [main] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@23358740
+2019-07-01 10:46:40.295  INFO 13472 --- [main] o.s.b.a.e.web.ServletEndpointRegistrar   : Registered '/actuator/hystrix.stream' to hystrix.stream-actuator-endpoint
+2019-07-01 10:46:40.421  WARN 13472 --- [main] lientConfigServiceBootstrapConfiguration : Could not locate configserver via discovery
+
+java.lang.IllegalStateException: No instances found of configserver (server-config)
+	at org.springframework.cloud.config.client.ConfigServerInstanceProvider.getConfigServerInstances(ConfigServerInstanceProvider.java:48) ~[spring-cloud-config-client-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.cloud.config.client.DiscoveryClientConfigServiceBootstrapConfiguration.refresh(DiscoveryClientConfigServiceBootstrapConfiguration.java:101) [spring-cloud-config-client-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.cloud.config.client.DiscoveryClientConfigServiceBootstrapConfiguration.startup(DiscoveryClientConfigServiceBootstrapConfiguration.java:87) [spring-cloud-config-client-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.cloud.config.client.DiscoveryClientConfigServiceBootstrapConfiguration.onApplicationEvent(DiscoveryClientConfigServiceBootstrapConfiguration.java:79) [spring-cloud-config-client-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172) [spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165) [spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139) [spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:402) [spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:408) [spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:408) [spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:359) [spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:896) [spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:552) [spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.cloud.context.named.NamedContextFactory.createContext(NamedContextFactory.java:136) [spring-cloud-context-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.cloud.context.named.NamedContextFactory.getContext(NamedContextFactory.java:101) [spring-cloud-context-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.cloud.context.named.NamedContextFactory.getInstance(NamedContextFactory.java:145) [spring-cloud-context-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.cloud.openfeign.FeignClientFactoryBean.get(FeignClientFactoryBean.java:220) [spring-cloud-openfeign-core-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.cloud.openfeign.FeignClientFactoryBean.feign(FeignClientFactoryBean.java:84) [spring-cloud-openfeign-core-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.cloud.openfeign.FeignClientFactoryBean.getTarget(FeignClientFactoryBean.java:257) [spring-cloud-openfeign-core-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.cloud.openfeign.FeignClientFactoryBean.getObject(FeignClientFactoryBean.java:247) [spring-cloud-openfeign-core-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.doGetObjectFromFactoryBean(FactoryBeanRegistrySupport.java:171) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.getObjectFromFactoryBean(FactoryBeanRegistrySupport.java:101) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getObjectForBeanInstance(AbstractBeanFactory.java:1674) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getObjectForBeanInstance(AbstractAutowireCapableBeanFactory.java:1249) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:257) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.addCandidateEntry(DefaultListableBeanFactory.java:1471) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1428) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1211) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1168) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:593) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1411) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:592) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1248) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1168) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:593) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1411) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:592) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:843) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877) [spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549) [spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142) ~[spring-boot-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775) ~[spring-boot-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) ~[spring-boot-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316) ~[spring-boot-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260) ~[spring-boot-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248) ~[spring-boot-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at com.example.service1.Service1Application.main(Service1Application.java:23) ~[classes/:na]
+
+2019-07-01 10:46:40.608  WARN 13472 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-07-01 10:46:40.608  INFO 13472 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-07-01 10:46:40.750  INFO 13472 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-07-01 10:46:42.408  INFO 13472 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2019-07-01 10:46:43.710  INFO 13472 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2019-07-01 10:46:43.754  INFO 13472 --- [main] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2019-07-01 10:46:43.760  INFO 13472 --- [main] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2019-07-01 10:46:43.767  INFO 13472 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 21 endpoint(s) beneath base path '/actuator'
+2019-07-01 10:46:43.852  INFO 13472 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2019-07-01 10:46:43.855  INFO 13472 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2019-07-01 10:46:43.857  INFO 13472 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2019-07-01 10:46:43.858  INFO 13472 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2019-07-01 10:46:43.858  INFO 13472 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2019-07-01 10:46:43.858  INFO 13472 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2019-07-01 10:46:43.942  INFO 13472 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-07-01 10:46:43.943  INFO 13472 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2019-07-01 10:46:43.944  INFO 13472 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2019-07-01 10:46:43.944  INFO 13472 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2019-07-01 10:46:43.944  INFO 13472 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2019-07-01 10:46:43.944  INFO 13472 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2019-07-01 10:46:43.944  INFO 13472 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2019-07-01 10:46:43.944  INFO 13472 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2019-07-01 10:46:43.948  INFO 13472 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2019-07-01 10:46:43.949  INFO 13472 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 10
+2019-07-01 10:46:43.951  INFO 13472 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2019-07-01 10:46:43.952  INFO 13472 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1561949203952 with initial instances count: 3
+2019-07-01 10:46:43.954  INFO 13472 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application SERVICE-1 with eureka with status UP
+2019-07-01 10:46:43.954  INFO 13472 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1561949203954, current=UP, previous=STARTING]
+2019-07-01 10:46:43.956  INFO 13472 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SERVICE-1/localhost:service-1:8765: registering service...
+2019-07-01 10:46:43.969  WARN 13472 --- [main] lientConfigServiceBootstrapConfiguration : Could not locate configserver via discovery
+
+java.lang.IllegalStateException: No instances found of configserver (server-config)
+	at org.springframework.cloud.config.client.ConfigServerInstanceProvider.getConfigServerInstances(ConfigServerInstanceProvider.java:48) ~[spring-cloud-config-client-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.cloud.config.client.DiscoveryClientConfigServiceBootstrapConfiguration.refresh(DiscoveryClientConfigServiceBootstrapConfiguration.java:101) [spring-cloud-config-client-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.cloud.config.client.DiscoveryClientConfigServiceBootstrapConfiguration.startup(DiscoveryClientConfigServiceBootstrapConfiguration.java:87) [spring-cloud-config-client-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.cloud.config.client.DiscoveryClientConfigServiceBootstrapConfiguration.onApplicationEvent(DiscoveryClientConfigServiceBootstrapConfiguration.java:79) [spring-cloud-config-client-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172) [spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165) [spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139) [spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:402) [spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:408) [spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:359) [spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:896) [spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:163) [spring-boot-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:552) [spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142) [spring-boot-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775) [spring-boot-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) [spring-boot-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316) [spring-boot-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260) [spring-boot-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248) [spring-boot-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at com.example.service1.Service1Application.main(Service1Application.java:23) [classes/:na]
+
+2019-07-01 10:46:43.988  INFO 13472 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SERVICE-1/localhost:service-1:8765 - registration status: 204
+2019-07-01 10:46:43.993  INFO 13472 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8765 (http) with context path ''
+2019-07-01 10:46:43.994  INFO 13472 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8765
+2019-07-01 10:46:43.995  INFO 13472 --- [main] c.example.service1.Service1Application   : Started Service1Application in 15.489 seconds (JVM running for 16.969)
+2019-07-01 10:46:44.674  INFO 13472 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-07-01 10:46:44.674  INFO 13472 --- [RMI TCP Connection(6)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-07-01 10:46:44.675  INFO 13472 --- [RMI TCP Connection(6)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-07-01 10:46:44.683  INFO 13472 --- [RMI TCP Connection(6)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2019-07-01 10:46:45.322  INFO 13472 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-07-01 10:46:45.372  INFO 13472 --- [RMI TCP Connection(2)-127.0.0.1] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:7010/
+2019-07-01 10:46:48.967  WARN 13472 --- [DiscoveryClient-CacheRefreshExecutor-0] lientConfigServiceBootstrapConfiguration : Could not locate configserver via discovery
+
+java.lang.IllegalStateException: No instances found of configserver (server-config)
+	at org.springframework.cloud.config.client.ConfigServerInstanceProvider.getConfigServerInstances(ConfigServerInstanceProvider.java:48) ~[spring-cloud-config-client-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.cloud.config.client.DiscoveryClientConfigServiceBootstrapConfiguration.refresh(DiscoveryClientConfigServiceBootstrapConfiguration.java:101) [spring-cloud-config-client-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.cloud.config.client.DiscoveryClientConfigServiceBootstrapConfiguration.heartbeat(DiscoveryClientConfigServiceBootstrapConfiguration.java:92) [spring-cloud-config-client-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.cloud.config.client.DiscoveryClientConfigServiceBootstrapConfiguration.onApplicationEvent(DiscoveryClientConfigServiceBootstrapConfiguration.java:82) [spring-cloud-config-client-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172) [spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165) [spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139) [spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:402) [spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:408) [spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:359) [spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.cloud.netflix.eureka.CloudEurekaClient.onCacheRefreshed(CloudEurekaClient.java:123) [spring-cloud-netflix-eureka-client-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:981) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1479) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1446) [eureka-client-1.9.8.jar:1.9.8]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_181]
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266) [na:1.8.0_181]
+	at java.util.concurrent.FutureTask.run(FutureTask.java) [na:1.8.0_181]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_181]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_181]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_181]
+
+2019-07-01 10:46:49.418  INFO 13472 --- [RMI TCP Connection(2)-127.0.0.1] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=service-1, profiles=[haha], label=dev, version=a8baca1ea44fc63128624f5b926f4e32472dcf5b, state=null
+2019-07-01 10:46:53.975  WARN 13472 --- [DiscoveryClient-CacheRefreshExecutor-0] lientConfigServiceBootstrapConfiguration : Could not locate configserver via discovery
+
+java.lang.IllegalStateException: No instances found of configserver (server-config)
+	at org.springframework.cloud.config.client.ConfigServerInstanceProvider.getConfigServerInstances(ConfigServerInstanceProvider.java:48) ~[spring-cloud-config-client-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.cloud.config.client.DiscoveryClientConfigServiceBootstrapConfiguration.refresh(DiscoveryClientConfigServiceBootstrapConfiguration.java:101) [spring-cloud-config-client-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.cloud.config.client.DiscoveryClientConfigServiceBootstrapConfiguration.heartbeat(DiscoveryClientConfigServiceBootstrapConfiguration.java:92) [spring-cloud-config-client-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.cloud.config.client.DiscoveryClientConfigServiceBootstrapConfiguration.onApplicationEvent(DiscoveryClientConfigServiceBootstrapConfiguration.java:82) [spring-cloud-config-client-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172) [spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165) [spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139) [spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:402) [spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:408) [spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:359) [spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.cloud.netflix.eureka.CloudEurekaClient.onCacheRefreshed(CloudEurekaClient.java:123) [spring-cloud-netflix-eureka-client-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:981) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1479) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1446) [eureka-client-1.9.8.jar:1.9.8]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_181]
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266) [na:1.8.0_181]
+	at java.util.concurrent.FutureTask.run(FutureTask.java) [na:1.8.0_181]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_181]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_181]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_181]
+
+2019-07-01 10:46:58.982  WARN 13472 --- [DiscoveryClient-CacheRefreshExecutor-0] lientConfigServiceBootstrapConfiguration : Could not locate configserver via discovery
+
+java.lang.IllegalStateException: No instances found of configserver (server-config)
+	at org.springframework.cloud.config.client.ConfigServerInstanceProvider.getConfigServerInstances(ConfigServerInstanceProvider.java:48) ~[spring-cloud-config-client-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.cloud.config.client.DiscoveryClientConfigServiceBootstrapConfiguration.refresh(DiscoveryClientConfigServiceBootstrapConfiguration.java:101) [spring-cloud-config-client-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.cloud.config.client.DiscoveryClientConfigServiceBootstrapConfiguration.heartbeat(DiscoveryClientConfigServiceBootstrapConfiguration.java:92) [spring-cloud-config-client-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.cloud.config.client.DiscoveryClientConfigServiceBootstrapConfiguration.onApplicationEvent(DiscoveryClientConfigServiceBootstrapConfiguration.java:82) [spring-cloud-config-client-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172) [spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165) [spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139) [spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:402) [spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:408) [spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:359) [spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.cloud.netflix.eureka.CloudEurekaClient.onCacheRefreshed(CloudEurekaClient.java:123) [spring-cloud-netflix-eureka-client-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:981) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1479) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1446) [eureka-client-1.9.8.jar:1.9.8]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_181]
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266) [na:1.8.0_181]
+	at java.util.concurrent.FutureTask.run(FutureTask.java) [na:1.8.0_181]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_181]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_181]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_181]
+
+2019-07-01 10:47:09.409  INFO 7288 --- [main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://192.168.231.1:7010/
+2019-07-01 10:47:12.946  INFO 7288 --- [main] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=service-1, profiles=[haha], label=dev, version=a8baca1ea44fc63128624f5b926f4e32472dcf5b, state=null
+2019-07-01 10:47:12.947  INFO 7288 --- [main] b.c.PropertySourceBootstrapConfiguration : Located property source: CompositePropertySource {name='configService', propertySources=[MapPropertySource {name='configClient'}, MapPropertySource {name='https://github.com/qizhi1a440/qingtian/config-repo/service-1-haha.yml'}, MapPropertySource {name='https://github.com/qizhi1a440/qingtian/tx-manager-1/src/main/resources/application.properties'}, MapPropertySource {name='https://github.com/qizhi1a440/qingtian/tx-manager/src/main/resources/application.properties'}, MapPropertySource {name='https://github.com/qizhi1a440/qingtian/service-business/src/main/resources/application.properties'}, MapPropertySource {name='https://github.com/qizhi1a440/qingtian/service-business/src/main/resources/application.yml'}, MapPropertySource {name='https://github.com/qizhi1a440/qingtian/service-2/src/main/resources/application.properties'}, MapPropertySource {name='https://github.com/qizhi1a440/qingtian/service-2/src/main/resources/application.yml'}, MapPropertySource {name='https://github.com/qizhi1a440/qingtian/service-1/src/main/resources/application.yml'}, MapPropertySource {name='https://github.com/qizhi1a440/qingtian/server-zuul/src/main/resources/application.yml'}, MapPropertySource {name='https://github.com/qizhi1a440/qingtian/server-eureka/src/main/resources/application.yml'}, MapPropertySource {name='https://github.com/qizhi1a440/qingtian/client-gateway/src/main/resources/application.yml'}]}
+2019-07-01 10:47:12.979  INFO 7288 --- [main] c.example.service1.Service1Application   : The following profiles are active: dev
+2019-07-01 10:47:13.598  WARN 7288 --- [main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2019-07-01 10:47:13.608  WARN 7288 --- [main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'hystrix.stream' contains invalid characters, please migrate to a valid format.
+2019-07-01 10:47:13.735  INFO 7288 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=58f7042d-b607-36f4-af51-94e1685f60ae
+2019-07-01 10:47:13.749  INFO 7288 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.example.service1.api.HiFeign' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-01 10:47:13.830  INFO 7288 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$fcb46f3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-01 10:47:13.926  INFO 7288 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$2be549f0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-01 10:47:14.132  INFO 7288 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8765 (http)
+2019-07-01 10:47:14.151  INFO 7288 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-07-01 10:47:14.152  INFO 7288 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2019-07-01 10:47:14.304  INFO 7288 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-07-01 10:47:14.304  INFO 7288 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1312 ms
+2019-07-01 10:47:14.400  WARN 7288 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-07-01 10:47:14.400  INFO 7288 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-07-01 10:47:14.409  INFO 7288 --- [main] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@51df2a41
+2019-07-01 10:47:14.785  INFO 7288 --- [main] o.s.b.a.e.web.ServletEndpointRegistrar   : Registered '/actuator/hystrix.stream' to hystrix.stream-actuator-endpoint
+2019-07-01 10:47:15.091  WARN 7288 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-07-01 10:47:15.091  INFO 7288 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-07-01 10:47:15.225  INFO 7288 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-07-01 10:47:16.882  INFO 7288 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2019-07-01 10:47:18.182  INFO 7288 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2019-07-01 10:47:18.225  INFO 7288 --- [main] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2019-07-01 10:47:18.231  INFO 7288 --- [main] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2019-07-01 10:47:18.238  INFO 7288 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 21 endpoint(s) beneath base path '/actuator'
+2019-07-01 10:47:18.328  INFO 7288 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2019-07-01 10:47:18.332  INFO 7288 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2019-07-01 10:47:18.334  INFO 7288 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2019-07-01 10:47:18.334  INFO 7288 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2019-07-01 10:47:18.334  INFO 7288 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2019-07-01 10:47:18.335  INFO 7288 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2019-07-01 10:47:18.419  INFO 7288 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-07-01 10:47:18.420  INFO 7288 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2019-07-01 10:47:18.421  INFO 7288 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2019-07-01 10:47:18.421  INFO 7288 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2019-07-01 10:47:18.421  INFO 7288 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2019-07-01 10:47:18.421  INFO 7288 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2019-07-01 10:47:18.421  INFO 7288 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2019-07-01 10:47:18.421  INFO 7288 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2019-07-01 10:47:18.425  INFO 7288 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2019-07-01 10:47:18.427  INFO 7288 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 10
+2019-07-01 10:47:18.429  INFO 7288 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2019-07-01 10:47:18.430  INFO 7288 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1561949238430 with initial instances count: 3
+2019-07-01 10:47:18.432  INFO 7288 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application SERVICE-1 with eureka with status UP
+2019-07-01 10:47:18.432  INFO 7288 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1561949238432, current=UP, previous=STARTING]
+2019-07-01 10:47:18.435  INFO 7288 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SERVICE-1/localhost:service-1:8765: registering service...
+2019-07-01 10:47:18.474  INFO 7288 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SERVICE-1/localhost:service-1:8765 - registration status: 204
+2019-07-01 10:47:18.477  INFO 7288 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8765 (http) with context path ''
+2019-07-01 10:47:18.478  INFO 7288 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8765
+2019-07-01 10:47:18.480  INFO 7288 --- [main] c.example.service1.Service1Application   : Started Service1Application in 14.861 seconds (JVM running for 16.361)
+2019-07-01 10:47:18.734  INFO 7288 --- [RMI TCP Connection(10)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-07-01 10:47:18.734  INFO 7288 --- [RMI TCP Connection(11)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-07-01 10:47:18.734  INFO 7288 --- [RMI TCP Connection(11)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-07-01 10:47:18.745  INFO 7288 --- [RMI TCP Connection(11)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
+2019-07-01 10:47:19.289  INFO 7288 --- [RMI TCP Connection(10)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-07-01 10:47:19.331  INFO 7288 --- [RMI TCP Connection(10)-127.0.0.1] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://192.168.231.1:7010/
+2019-07-01 10:47:23.786  INFO 7288 --- [RMI TCP Connection(10)-127.0.0.1] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=service-1, profiles=[haha], label=dev, version=a8baca1ea44fc63128624f5b926f4e32472dcf5b, state=null
+2019-07-01 10:47:58.105  INFO 9896 --- [main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:7010/
+2019-07-01 10:51:03.181  INFO 9896 --- [main] c.c.c.ConfigServicePropertySourceLocator : Connect Timeout Exception on Url - http://localhost:7010/. Will be trying the next url if available
+2019-07-01 10:51:03.185  WARN 9896 --- [main] c.c.c.ConfigServicePropertySourceLocator : Could not locate PropertySource: I/O error on GET request for "http://localhost:7010/service-1/haha/dev": Read timed out; nested exception is java.net.SocketTimeoutException: Read timed out
+2019-07-01 10:51:03.189  INFO 9896 --- [main] c.example.service1.Service1Application   : The following profiles are active: dev
+2019-07-01 10:51:03.798  WARN 9896 --- [main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2019-07-01 10:51:03.807  WARN 9896 --- [main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'hystrix.stream' contains invalid characters, please migrate to a valid format.
+2019-07-01 10:51:03.935  INFO 9896 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=58f7042d-b607-36f4-af51-94e1685f60ae
+2019-07-01 10:51:03.948  INFO 9896 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.example.service1.api.HiFeign' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-01 10:51:04.027  INFO 9896 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$aee22148] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-01 10:51:04.126  INFO 9896 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$cafc2445] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-01 10:51:04.319  INFO 9896 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8764 (http)
+2019-07-01 10:51:04.337  INFO 9896 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-07-01 10:51:04.337  INFO 9896 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2019-07-01 10:51:04.453  INFO 9896 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-07-01 10:51:04.453  INFO 9896 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1244 ms
+2019-07-01 10:51:04.542  WARN 9896 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-07-01 10:51:04.543  INFO 9896 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-07-01 10:51:04.550  INFO 9896 --- [main] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@55f6f965
+2019-07-01 10:51:04.931  INFO 9896 --- [main] o.s.b.a.e.web.ServletEndpointRegistrar   : Registered '/actuator/hystrix.stream' to hystrix.stream-actuator-endpoint
+2019-07-01 10:51:05.217  WARN 9896 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-07-01 10:51:05.217  INFO 9896 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-07-01 10:51:05.346  INFO 9896 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-07-01 10:51:06.929  INFO 9896 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2019-07-01 10:51:08.216  INFO 9896 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2019-07-01 10:51:08.283  INFO 9896 --- [main] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2019-07-01 10:51:08.289  INFO 9896 --- [main] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2019-07-01 10:51:08.297  INFO 9896 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 21 endpoint(s) beneath base path '/actuator'
+2019-07-01 10:51:08.391  INFO 9896 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2019-07-01 10:51:08.394  INFO 9896 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2019-07-01 10:51:08.397  INFO 9896 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2019-07-01 10:51:08.397  INFO 9896 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2019-07-01 10:51:08.397  INFO 9896 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2019-07-01 10:51:08.398  INFO 9896 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2019-07-01 10:51:08.499  INFO 9896 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-07-01 10:51:08.500  INFO 9896 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2019-07-01 10:51:08.500  INFO 9896 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2019-07-01 10:51:08.500  INFO 9896 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2019-07-01 10:51:08.500  INFO 9896 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2019-07-01 10:51:08.500  INFO 9896 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2019-07-01 10:51:08.501  INFO 9896 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2019-07-01 10:51:08.501  INFO 9896 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2019-07-01 10:51:08.505  INFO 9896 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2019-07-01 10:51:08.505  INFO 9896 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 10
+2019-07-01 10:51:08.507  INFO 9896 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2019-07-01 10:51:08.508  INFO 9896 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1561949468508 with initial instances count: 3
+2019-07-01 10:51:08.510  INFO 9896 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application SERVICE-1 with eureka with status UP
+2019-07-01 10:51:08.511  INFO 9896 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1561949468511, current=UP, previous=STARTING]
+2019-07-01 10:51:08.512  INFO 9896 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SERVICE-1/localhost:service-1:8764: registering service...
+2019-07-01 10:51:08.564  INFO 9896 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SERVICE-1/localhost:service-1:8764 - registration status: 204
+2019-07-01 10:51:08.567  INFO 9896 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8764 (http) with context path ''
+2019-07-01 10:51:08.567  INFO 9896 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8764
+2019-07-01 10:51:08.568  INFO 9896 --- [main] c.example.service1.Service1Application   : Started Service1Application in 196.337 seconds (JVM running for 197.937)
+2019-07-01 10:51:08.854  INFO 9896 --- [RMI TCP Connection(11)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-07-01 10:51:08.855  INFO 9896 --- [RMI TCP Connection(12)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-07-01 10:51:08.855  INFO 9896 --- [RMI TCP Connection(12)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-07-01 10:51:08.865  INFO 9896 --- [RMI TCP Connection(12)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
+2019-07-01 10:51:09.445  INFO 9896 --- [RMI TCP Connection(11)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-07-01 10:51:09.506  INFO 9896 --- [RMI TCP Connection(11)-127.0.0.1] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://192.168.231.1:7010/
+2019-07-01 10:52:02.204  INFO 23204 --- [main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://192.168.231.1:7010/

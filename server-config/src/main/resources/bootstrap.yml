@@ -3,7 +3,7 @@ encrypt:
 
 spring:
   application:
-    name: service-config
+    name: server-config
 
 
 server:

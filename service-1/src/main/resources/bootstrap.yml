@@ -1,0 +1,10 @@
+spring:
+  cloud:
+    config:
+      uri: http://localhost:7010/
+      name: service-1
+      profile: haha
+      label: dev
+      discovery:
+        enabled: true
+        service-id: server-config

@@ -1280,3 +1280,650 @@ java.lang.IllegalStateException: No instances found of configserver (server-conf
 2019-07-01 10:51:09.445  INFO 9896 --- [RMI TCP Connection(11)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
 2019-07-01 10:51:09.506  INFO 9896 --- [RMI TCP Connection(11)-127.0.0.1] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://192.168.231.1:7010/
 2019-07-01 10:52:02.204  INFO 23204 --- [main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://192.168.231.1:7010/
+2019-07-01 10:55:07.246  INFO 23204 --- [main] c.c.c.ConfigServicePropertySourceLocator : Connect Timeout Exception on Url - http://192.168.231.1:7010/. Will be trying the next url if available
+2019-07-01 10:55:07.246  WARN 23204 --- [main] c.c.c.ConfigServicePropertySourceLocator : Could not locate PropertySource: I/O error on GET request for "http://192.168.231.1:7010/service-1/haha/dev": Read timed out; nested exception is java.net.SocketTimeoutException: Read timed out
+2019-07-01 10:55:07.248  INFO 23204 --- [main] c.example.service1.Service1Application   : The following profiles are active: dev
+2019-07-01 10:55:07.936  WARN 23204 --- [main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2019-07-01 10:55:07.947  WARN 23204 --- [main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'hystrix.stream' contains invalid characters, please migrate to a valid format.
+2019-07-01 10:55:08.081  INFO 23204 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=58f7042d-b607-36f4-af51-94e1685f60ae
+2019-07-01 10:55:08.096  INFO 23204 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.example.service1.api.HiFeign' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-01 10:55:08.181  INFO 23204 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$8d2d15cf] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-01 10:55:08.271  INFO 23204 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$a94718cc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-01 10:55:08.489  INFO 23204 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8764 (http)
+2019-07-01 10:55:08.507  INFO 23204 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-07-01 10:55:08.508  INFO 23204 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2019-07-01 10:55:08.626  INFO 23204 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-07-01 10:55:08.627  INFO 23204 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1360 ms
+2019-07-01 10:55:08.723  WARN 23204 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-07-01 10:55:08.724  INFO 23204 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-07-01 10:55:08.732  INFO 23204 --- [main] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@cef885d
+2019-07-01 10:55:09.123  INFO 23204 --- [main] o.s.b.a.e.web.ServletEndpointRegistrar   : Registered '/actuator/hystrix.stream' to hystrix.stream-actuator-endpoint
+2019-07-01 10:55:09.443  WARN 23204 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-07-01 10:55:09.443  INFO 23204 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-07-01 10:55:09.583  INFO 23204 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-07-01 10:55:11.213  INFO 23204 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2019-07-01 10:55:12.504  INFO 23204 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2019-07-01 10:55:12.552  INFO 23204 --- [main] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2019-07-01 10:55:12.557  INFO 23204 --- [main] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2019-07-01 10:55:12.565  INFO 23204 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 21 endpoint(s) beneath base path '/actuator'
+2019-07-01 10:55:12.657  INFO 23204 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2019-07-01 10:55:12.661  INFO 23204 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2019-07-01 10:55:12.663  INFO 23204 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2019-07-01 10:55:12.663  INFO 23204 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2019-07-01 10:55:12.663  INFO 23204 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2019-07-01 10:55:12.664  INFO 23204 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2019-07-01 10:55:12.755  INFO 23204 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-07-01 10:55:12.756  INFO 23204 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2019-07-01 10:55:12.756  INFO 23204 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2019-07-01 10:55:12.756  INFO 23204 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2019-07-01 10:55:12.756  INFO 23204 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2019-07-01 10:55:12.756  INFO 23204 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2019-07-01 10:55:12.756  INFO 23204 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2019-07-01 10:55:12.757  INFO 23204 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2019-07-01 10:55:12.762  INFO 23204 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2019-07-01 10:55:12.764  INFO 23204 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 10
+2019-07-01 10:55:12.766  INFO 23204 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2019-07-01 10:55:12.768  INFO 23204 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1561949712768 with initial instances count: 2
+2019-07-01 10:55:12.770  INFO 23204 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application SERVICE-1 with eureka with status UP
+2019-07-01 10:55:12.771  INFO 23204 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1561949712770, current=UP, previous=STARTING]
+2019-07-01 10:55:12.774  INFO 23204 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SERVICE-1/localhost:service-1:8764: registering service...
+2019-07-01 10:55:12.817  INFO 23204 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8764 (http) with context path ''
+2019-07-01 10:55:12.818  INFO 23204 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SERVICE-1/localhost:service-1:8764 - registration status: 204
+2019-07-01 10:55:12.818  INFO 23204 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8764
+2019-07-01 10:55:12.820  INFO 23204 --- [main] c.example.service1.Service1Application   : Started Service1Application in 196.43 seconds (JVM running for 197.916)
+2019-07-01 10:55:13.077  INFO 23204 --- [RMI TCP Connection(15)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-07-01 10:55:13.077  INFO 23204 --- [RMI TCP Connection(16)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-07-01 10:55:13.077  INFO 23204 --- [RMI TCP Connection(16)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-07-01 10:55:13.088  INFO 23204 --- [RMI TCP Connection(16)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
+2019-07-01 10:55:13.736  INFO 23204 --- [RMI TCP Connection(15)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-07-01 10:55:13.797  INFO 23204 --- [RMI TCP Connection(15)-127.0.0.1] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://192.168.231.1:7010/
+2019-07-01 10:55:24.781  INFO 27384 --- [main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://192.168.231.1:7010/
+2019-07-01 10:56:14.279  INFO 27384 --- [main] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=service-1, profiles=[haha], label=dev, version=a8baca1ea44fc63128624f5b926f4e32472dcf5b, state=null
+2019-07-01 10:56:14.279  INFO 27384 --- [main] b.c.PropertySourceBootstrapConfiguration : Located property source: CompositePropertySource {name='configService', propertySources=[MapPropertySource {name='configClient'}, MapPropertySource {name='https://github.com/qizhi1a440/qingtian/config-repo/service-1-haha.yml'}, MapPropertySource {name='https://github.com/qizhi1a440/qingtian/tx-manager-1/src/main/resources/application.properties'}, MapPropertySource {name='https://github.com/qizhi1a440/qingtian/tx-manager/src/main/resources/application.properties'}, MapPropertySource {name='https://github.com/qizhi1a440/qingtian/service-business/src/main/resources/application.properties'}, MapPropertySource {name='https://github.com/qizhi1a440/qingtian/service-business/src/main/resources/application.yml'}, MapPropertySource {name='https://github.com/qizhi1a440/qingtian/service-2/src/main/resources/application.properties'}, MapPropertySource {name='https://github.com/qizhi1a440/qingtian/service-2/src/main/resources/application.yml'}, MapPropertySource {name='https://github.com/qizhi1a440/qingtian/service-1/src/main/resources/application.yml'}, MapPropertySource {name='https://github.com/qizhi1a440/qingtian/server-zuul/src/main/resources/application.yml'}, MapPropertySource {name='https://github.com/qizhi1a440/qingtian/server-eureka/src/main/resources/application.yml'}, MapPropertySource {name='https://github.com/qizhi1a440/qingtian/client-gateway/src/main/resources/application.yml'}]}
+2019-07-01 10:56:14.309  INFO 27384 --- [main] c.example.service1.Service1Application   : The following profiles are active: dev
+2019-07-01 10:56:14.945  WARN 27384 --- [main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2019-07-01 10:56:14.956  WARN 27384 --- [main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'hystrix.stream' contains invalid characters, please migrate to a valid format.
+2019-07-01 10:56:15.095  INFO 27384 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=58f7042d-b607-36f4-af51-94e1685f60ae
+2019-07-01 10:56:15.114  INFO 27384 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.example.service1.api.HiFeign' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-01 10:56:15.199  INFO 27384 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4c3478a9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-01 10:56:15.304  INFO 27384 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$684e7ba6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-01 10:56:15.504  INFO 27384 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8765 (http)
+2019-07-01 10:56:15.522  INFO 27384 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-07-01 10:56:15.522  INFO 27384 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2019-07-01 10:56:15.641  INFO 27384 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-07-01 10:56:15.641  INFO 27384 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1318 ms
+2019-07-01 10:56:15.735  WARN 27384 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-07-01 10:56:15.736  INFO 27384 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-07-01 10:56:15.743  INFO 27384 --- [main] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@34fc315d
+2019-07-01 10:56:16.153  INFO 27384 --- [main] o.s.b.a.e.web.ServletEndpointRegistrar   : Registered '/actuator/hystrix.stream' to hystrix.stream-actuator-endpoint
+2019-07-01 10:56:16.531  WARN 27384 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-07-01 10:56:16.531  INFO 27384 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-07-01 10:56:16.675  INFO 27384 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-07-01 10:56:18.305  INFO 27384 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2019-07-01 10:56:19.592  INFO 27384 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2019-07-01 10:56:19.639  INFO 27384 --- [main] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2019-07-01 10:56:19.645  INFO 27384 --- [main] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2019-07-01 10:56:19.652  INFO 27384 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 21 endpoint(s) beneath base path '/actuator'
+2019-07-01 10:56:19.740  INFO 27384 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2019-07-01 10:56:19.744  INFO 27384 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2019-07-01 10:56:19.745  INFO 27384 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2019-07-01 10:56:19.746  INFO 27384 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2019-07-01 10:56:19.746  INFO 27384 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2019-07-01 10:56:19.746  INFO 27384 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2019-07-01 10:56:19.834  INFO 27384 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-07-01 10:56:19.834  INFO 27384 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2019-07-01 10:56:19.835  INFO 27384 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2019-07-01 10:56:19.835  INFO 27384 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2019-07-01 10:56:19.835  INFO 27384 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2019-07-01 10:56:19.835  INFO 27384 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2019-07-01 10:56:19.835  INFO 27384 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2019-07-01 10:56:19.835  INFO 27384 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2019-07-01 10:56:19.839  INFO 27384 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2019-07-01 10:56:19.840  INFO 27384 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 10
+2019-07-01 10:56:19.841  INFO 27384 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2019-07-01 10:56:19.843  INFO 27384 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1561949779843 with initial instances count: 2
+2019-07-01 10:56:19.845  INFO 27384 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application SERVICE-1 with eureka with status UP
+2019-07-01 10:56:19.845  INFO 27384 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1561949779845, current=UP, previous=STARTING]
+2019-07-01 10:56:19.848  INFO 27384 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SERVICE-1/localhost:service-1:8765: registering service...
+2019-07-01 10:56:19.888  INFO 27384 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SERVICE-1/localhost:service-1:8765 - registration status: 204
+2019-07-01 10:56:19.890  INFO 27384 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8765 (http) with context path ''
+2019-07-01 10:56:19.891  INFO 27384 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8765
+2019-07-01 10:56:19.893  INFO 27384 --- [main] c.example.service1.Service1Application   : Started Service1Application in 61.043 seconds (JVM running for 62.83)
+2019-07-01 10:56:20.306  INFO 27384 --- [RMI TCP Connection(7)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-07-01 10:56:20.306  INFO 27384 --- [RMI TCP Connection(4)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-07-01 10:56:20.306  INFO 27384 --- [RMI TCP Connection(4)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-07-01 10:56:20.316  INFO 27384 --- [RMI TCP Connection(4)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
+2019-07-01 10:56:20.945  INFO 27384 --- [RMI TCP Connection(7)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-07-01 10:56:21.002  INFO 27384 --- [RMI TCP Connection(7)-127.0.0.1] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://192.168.231.1:7010/
+2019-07-01 10:56:41.066  INFO 27384 --- [RMI TCP Connection(7)-127.0.0.1] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=service-1, profiles=[haha], label=dev, version=a8baca1ea44fc63128624f5b926f4e32472dcf5b, state=null
+2019-07-01 11:00:18.382  INFO 3280 --- [main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:8888
+2019-07-01 11:00:19.476  INFO 3280 --- [main] c.c.c.ConfigServicePropertySourceLocator : Connect Timeout Exception on Url - http://localhost:8888. Will be trying the next url if available
+2019-07-01 11:00:19.480  WARN 3280 --- [main] c.c.c.ConfigServicePropertySourceLocator : Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/service-1/default": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
+2019-07-01 11:00:19.487  INFO 3280 --- [main] c.example.service1.Service1Application   : The following profiles are active: dev
+2019-07-01 11:00:20.134  WARN 3280 --- [main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2019-07-01 11:00:20.146  WARN 3280 --- [main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'hystrix.stream' contains invalid characters, please migrate to a valid format.
+2019-07-01 11:00:20.293  INFO 3280 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=8632b26d-5607-314e-bdf2-d318299119a3
+2019-07-01 11:00:20.308  INFO 3280 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.example.service1.api.HiFeign' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-01 11:00:20.396  INFO 3280 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a631185e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-01 11:00:20.482  INFO 3280 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$c24b1b5b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-01 11:00:20.741  INFO 3280 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8764 (http)
+2019-07-01 11:00:20.759  INFO 3280 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-07-01 11:00:20.760  INFO 3280 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2019-07-01 11:00:20.891  INFO 3280 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-07-01 11:00:20.891  INFO 3280 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1373 ms
+2019-07-01 11:00:20.990  WARN 3280 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-07-01 11:00:20.990  INFO 3280 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-07-01 11:00:20.999  INFO 3280 --- [main] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@48cdb156
+2019-07-01 11:00:22.503  INFO 3280 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2019-07-01 11:00:22.768  INFO 3280 --- [main] o.s.b.a.e.web.ServletEndpointRegistrar   : Registered '/actuator/hystrix.stream' to hystrix.stream-actuator-endpoint
+2019-07-01 11:00:23.054  WARN 3280 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-07-01 11:00:23.055  INFO 3280 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-07-01 11:00:23.194  INFO 3280 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-07-01 11:00:24.814  INFO 3280 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2019-07-01 11:00:24.870  INFO 3280 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 21 endpoint(s) beneath base path '/actuator'
+2019-07-01 11:00:24.956  INFO 3280 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2019-07-01 11:00:24.989  INFO 3280 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2019-07-01 11:00:25.328  INFO 3280 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2019-07-01 11:00:25.329  INFO 3280 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2019-07-01 11:00:25.429  INFO 3280 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2019-07-01 11:00:25.430  INFO 3280 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2019-07-01 11:00:25.631  INFO 3280 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-07-01 11:00:25.841  INFO 3280 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2019-07-01 11:00:25.842  INFO 3280 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2019-07-01 11:00:25.842  INFO 3280 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2019-07-01 11:00:25.842  INFO 3280 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2019-07-01 11:00:25.843  INFO 3280 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2019-07-01 11:00:25.843  INFO 3280 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2019-07-01 11:00:25.843  INFO 3280 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2019-07-01 11:00:25.942  INFO 3280 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2019-07-01 11:00:25.945  INFO 3280 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 10
+2019-07-01 11:00:25.946  INFO 3280 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2019-07-01 11:00:25.949  INFO 3280 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1561950025948 with initial instances count: 2
+2019-07-01 11:00:25.951  INFO 3280 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application SERVICE-1 with eureka with status UP
+2019-07-01 11:00:25.952  INFO 3280 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1561950025952, current=UP, previous=STARTING]
+2019-07-01 11:00:25.953  INFO 3280 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SERVICE-1/localhost:service-1:8764: registering service...
+2019-07-01 11:00:25.984  INFO 3280 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SERVICE-1/localhost:service-1:8764 - registration status: 204
+2019-07-01 11:00:25.986  INFO 3280 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8764 (http) with context path ''
+2019-07-01 11:00:25.987  INFO 3280 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8764
+2019-07-01 11:00:25.989  INFO 3280 --- [main] c.example.service1.Service1Application   : Started Service1Application in 10.925 seconds (JVM running for 12.49)
+2019-07-01 11:00:26.415  INFO 3280 --- [RMI TCP Connection(7)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-07-01 11:00:26.415  INFO 3280 --- [RMI TCP Connection(7)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-07-01 11:00:26.415  INFO 3280 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-07-01 11:00:26.424  INFO 3280 --- [RMI TCP Connection(7)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2019-07-01 11:00:27.043  INFO 3280 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-07-01 11:00:27.114  INFO 3280 --- [RMI TCP Connection(2)-127.0.0.1] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:8888
+2019-07-01 11:00:28.122  INFO 3280 --- [RMI TCP Connection(2)-127.0.0.1] c.c.c.ConfigServicePropertySourceLocator : Connect Timeout Exception on Url - http://localhost:8888. Will be trying the next url if available
+2019-07-01 11:00:28.124  WARN 3280 --- [RMI TCP Connection(2)-127.0.0.1] c.c.c.ConfigServicePropertySourceLocator : Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/service-1/default": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
+2019-07-01 11:01:30.885  INFO 24564 --- [main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:8888
+2019-07-01 11:01:31.967  INFO 24564 --- [main] c.c.c.ConfigServicePropertySourceLocator : Connect Timeout Exception on Url - http://localhost:8888. Will be trying the next url if available
+2019-07-01 11:01:31.968  WARN 24564 --- [main] c.c.c.ConfigServicePropertySourceLocator : Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/service-1/default": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
+2019-07-01 11:01:31.970  INFO 24564 --- [main] c.example.service1.Service1Application   : The following profiles are active: dev
+2019-07-01 11:01:32.598  WARN 24564 --- [main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2019-07-01 11:01:32.608  WARN 24564 --- [main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'hystrix.stream' contains invalid characters, please migrate to a valid format.
+2019-07-01 11:01:32.751  INFO 24564 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=8632b26d-5607-314e-bdf2-d318299119a3
+2019-07-01 11:01:32.765  INFO 24564 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.example.service1.api.HiFeign' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-01 11:01:32.856  INFO 24564 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d769b1b7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-01 11:01:32.942  INFO 24564 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$f383b4b4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-01 11:01:33.198  INFO 24564 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8764 (http)
+2019-07-01 11:01:33.217  INFO 24564 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-07-01 11:01:33.217  INFO 24564 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2019-07-01 11:01:33.333  INFO 24564 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-07-01 11:01:33.333  INFO 24564 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1345 ms
+2019-07-01 11:01:33.431  WARN 24564 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-07-01 11:01:33.432  INFO 24564 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-07-01 11:01:33.440  INFO 24564 --- [main] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@569348e1
+2019-07-01 11:01:34.929  INFO 24564 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2019-07-01 11:01:35.173  INFO 24564 --- [main] o.s.b.a.e.web.ServletEndpointRegistrar   : Registered '/actuator/hystrix.stream' to hystrix.stream-actuator-endpoint
+2019-07-01 11:01:35.465  WARN 24564 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-07-01 11:01:35.465  INFO 24564 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-07-01 11:01:35.602  INFO 24564 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-07-01 11:01:37.209  INFO 24564 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2019-07-01 11:01:37.260  INFO 24564 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 21 endpoint(s) beneath base path '/actuator'
+2019-07-01 11:01:37.346  INFO 24564 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2019-07-01 11:01:37.377  INFO 24564 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2019-07-01 11:01:37.713  INFO 24564 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2019-07-01 11:01:37.713  INFO 24564 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2019-07-01 11:01:37.821  INFO 24564 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2019-07-01 11:01:37.822  INFO 24564 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2019-07-01 11:01:38.046  INFO 24564 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-07-01 11:01:38.249  INFO 24564 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2019-07-01 11:01:38.250  INFO 24564 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2019-07-01 11:01:38.250  INFO 24564 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2019-07-01 11:01:38.250  INFO 24564 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2019-07-01 11:01:38.251  INFO 24564 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2019-07-01 11:01:38.251  INFO 24564 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2019-07-01 11:01:38.251  INFO 24564 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2019-07-01 11:01:38.356  INFO 24564 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2019-07-01 11:01:38.367  INFO 24564 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 10
+2019-07-01 11:01:38.370  INFO 24564 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2019-07-01 11:01:38.372  INFO 24564 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1561950098371 with initial instances count: 3
+2019-07-01 11:01:38.374  INFO 24564 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application SERVICE-1 with eureka with status UP
+2019-07-01 11:01:38.375  INFO 24564 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1561950098375, current=UP, previous=STARTING]
+2019-07-01 11:01:38.377  INFO 24564 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SERVICE-1/localhost:service-1:8764: registering service...
+2019-07-01 11:01:38.405  INFO 24564 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SERVICE-1/localhost:service-1:8764 - registration status: 204
+2019-07-01 11:01:38.411  INFO 24564 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8764 (http) with context path ''
+2019-07-01 11:01:38.412  INFO 24564 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8764
+2019-07-01 11:01:38.414  INFO 24564 --- [main] c.example.service1.Service1Application   : Started Service1Application in 10.78 seconds (JVM running for 12.233)
+2019-07-01 11:01:39.141  INFO 24564 --- [RMI TCP Connection(10)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-07-01 11:01:39.141  INFO 24564 --- [RMI TCP Connection(9)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-07-01 11:01:39.141  INFO 24564 --- [RMI TCP Connection(9)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-07-01 11:01:39.149  INFO 24564 --- [RMI TCP Connection(9)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2019-07-01 11:01:39.693  INFO 24564 --- [RMI TCP Connection(10)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-07-01 11:01:39.739  INFO 24564 --- [RMI TCP Connection(10)-127.0.0.1] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:8888
+2019-07-01 11:01:40.747  INFO 24564 --- [RMI TCP Connection(10)-127.0.0.1] c.c.c.ConfigServicePropertySourceLocator : Connect Timeout Exception on Url - http://localhost:8888. Will be trying the next url if available
+2019-07-01 11:01:40.748  WARN 24564 --- [RMI TCP Connection(10)-127.0.0.1] c.c.c.ConfigServicePropertySourceLocator : Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/service-1/default": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
+2019-07-01 11:01:57.551  INFO 1260 --- [main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://192.168.231.1:7010/
+2019-07-01 11:02:01.066  INFO 1260 --- [main] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=service-1, profiles=[haha], label=dev, version=a8baca1ea44fc63128624f5b926f4e32472dcf5b, state=null
+2019-07-01 11:02:01.067  INFO 1260 --- [main] b.c.PropertySourceBootstrapConfiguration : Located property source: CompositePropertySource {name='configService', propertySources=[MapPropertySource {name='configClient'}, MapPropertySource {name='https://github.com/qizhi1a440/qingtian/config-repo/service-1-haha.yml'}, MapPropertySource {name='https://github.com/qizhi1a440/qingtian/tx-manager-1/src/main/resources/application.properties'}, MapPropertySource {name='https://github.com/qizhi1a440/qingtian/tx-manager/src/main/resources/application.properties'}, MapPropertySource {name='https://github.com/qizhi1a440/qingtian/service-business/src/main/resources/application.properties'}, MapPropertySource {name='https://github.com/qizhi1a440/qingtian/service-business/src/main/resources/application.yml'}, MapPropertySource {name='https://github.com/qizhi1a440/qingtian/service-2/src/main/resources/application.properties'}, MapPropertySource {name='https://github.com/qizhi1a440/qingtian/service-2/src/main/resources/application.yml'}, MapPropertySource {name='https://github.com/qizhi1a440/qingtian/service-1/src/main/resources/application.yml'}, MapPropertySource {name='https://github.com/qizhi1a440/qingtian/server-zuul/src/main/resources/application.yml'}, MapPropertySource {name='https://github.com/qizhi1a440/qingtian/server-eureka/src/main/resources/application.yml'}, MapPropertySource {name='https://github.com/qizhi1a440/qingtian/client-gateway/src/main/resources/application.yml'}]}
+2019-07-01 11:02:01.095  INFO 1260 --- [main] c.example.service1.Service1Application   : The following profiles are active: dev
+2019-07-01 11:02:01.687  WARN 1260 --- [main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2019-07-01 11:02:01.696  WARN 1260 --- [main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'hystrix.stream' contains invalid characters, please migrate to a valid format.
+2019-07-01 11:02:01.822  INFO 1260 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=58f7042d-b607-36f4-af51-94e1685f60ae
+2019-07-01 11:02:01.835  INFO 1260 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.example.service1.api.HiFeign' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-01 11:02:01.914  INFO 1260 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$daee200f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-01 11:02:02.003  INFO 1260 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$f708230c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-01 11:02:02.199  INFO 1260 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8765 (http)
+2019-07-01 11:02:02.217  INFO 1260 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-07-01 11:02:02.217  INFO 1260 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2019-07-01 11:02:02.348  INFO 1260 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-07-01 11:02:02.349  INFO 1260 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1241 ms
+2019-07-01 11:02:02.442  WARN 1260 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-07-01 11:02:02.442  INFO 1260 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-07-01 11:02:02.449  INFO 1260 --- [main] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@780c0
+2019-07-01 11:02:02.818  INFO 1260 --- [main] o.s.b.a.e.web.ServletEndpointRegistrar   : Registered '/actuator/hystrix.stream' to hystrix.stream-actuator-endpoint
+2019-07-01 11:02:03.119  WARN 1260 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-07-01 11:02:03.119  INFO 1260 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-07-01 11:02:03.251  INFO 1260 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-07-01 11:02:04.900  INFO 1260 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2019-07-01 11:02:06.195  INFO 1260 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2019-07-01 11:02:06.246  INFO 1260 --- [main] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2019-07-01 11:02:06.252  INFO 1260 --- [main] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2019-07-01 11:02:06.259  INFO 1260 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 21 endpoint(s) beneath base path '/actuator'
+2019-07-01 11:02:06.353  INFO 1260 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2019-07-01 11:02:06.357  INFO 1260 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2019-07-01 11:02:06.359  INFO 1260 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2019-07-01 11:02:06.359  INFO 1260 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2019-07-01 11:02:06.359  INFO 1260 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2019-07-01 11:02:06.360  INFO 1260 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2019-07-01 11:02:06.443  INFO 1260 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-07-01 11:02:06.444  INFO 1260 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2019-07-01 11:02:06.444  INFO 1260 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2019-07-01 11:02:06.445  INFO 1260 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2019-07-01 11:02:06.445  INFO 1260 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2019-07-01 11:02:06.445  INFO 1260 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2019-07-01 11:02:06.445  INFO 1260 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2019-07-01 11:02:06.445  INFO 1260 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2019-07-01 11:02:06.448  INFO 1260 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2019-07-01 11:02:06.449  INFO 1260 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 10
+2019-07-01 11:02:06.451  INFO 1260 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2019-07-01 11:02:06.452  INFO 1260 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1561950126452 with initial instances count: 3
+2019-07-01 11:02:06.454  INFO 1260 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application SERVICE-1 with eureka with status UP
+2019-07-01 11:02:06.454  INFO 1260 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1561950126454, current=UP, previous=STARTING]
+2019-07-01 11:02:06.456  INFO 1260 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SERVICE-1/localhost:service-1:8765: registering service...
+2019-07-01 11:02:06.486  INFO 1260 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SERVICE-1/localhost:service-1:8765 - registration status: 204
+2019-07-01 11:02:06.489  INFO 1260 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8765 (http) with context path ''
+2019-07-01 11:02:06.490  INFO 1260 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8765
+2019-07-01 11:02:06.492  INFO 1260 --- [main] c.example.service1.Service1Application   : Started Service1Application in 14.686 seconds (JVM running for 16.204)
+2019-07-01 11:02:06.820  INFO 1260 --- [RMI TCP Connection(7)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-07-01 11:02:06.821  INFO 1260 --- [RMI TCP Connection(8)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-07-01 11:02:06.821  INFO 1260 --- [RMI TCP Connection(8)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-07-01 11:02:06.830  INFO 1260 --- [RMI TCP Connection(8)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2019-07-01 11:02:07.425  INFO 1260 --- [RMI TCP Connection(7)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-07-01 11:02:07.470  INFO 1260 --- [RMI TCP Connection(7)-127.0.0.1] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://192.168.231.1:7010/
+2019-07-01 11:02:10.564  INFO 1260 --- [RMI TCP Connection(7)-127.0.0.1] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=service-1, profiles=[haha], label=dev, version=a8baca1ea44fc63128624f5b926f4e32472dcf5b, state=null
+2019-07-01 11:04:02.548  INFO 23036 --- [main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://192.168.231.1:7010/
+2019-07-01 11:04:07.544  INFO 23036 --- [main] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=service-1, profiles=[default], label=dev, version=a8baca1ea44fc63128624f5b926f4e32472dcf5b, state=null
+2019-07-01 11:04:07.545  INFO 23036 --- [main] b.c.PropertySourceBootstrapConfiguration : Located property source: CompositePropertySource {name='configService', propertySources=[MapPropertySource {name='configClient'}, MapPropertySource {name='https://github.com/qizhi1a440/qingtian/tx-manager-1/src/main/resources/application.properties'}, MapPropertySource {name='https://github.com/qizhi1a440/qingtian/tx-manager/src/main/resources/application.properties'}, MapPropertySource {name='https://github.com/qizhi1a440/qingtian/service-business/src/main/resources/application.properties'}, MapPropertySource {name='https://github.com/qizhi1a440/qingtian/service-business/src/main/resources/application.yml'}, MapPropertySource {name='https://github.com/qizhi1a440/qingtian/service-2/src/main/resources/application.properties'}, MapPropertySource {name='https://github.com/qizhi1a440/qingtian/service-2/src/main/resources/application.yml'}, MapPropertySource {name='https://github.com/qizhi1a440/qingtian/service-1/src/main/resources/application.yml'}, MapPropertySource {name='https://github.com/qizhi1a440/qingtian/server-zuul/src/main/resources/application.yml'}, MapPropertySource {name='https://github.com/qizhi1a440/qingtian/server-eureka/src/main/resources/application.yml'}, MapPropertySource {name='https://github.com/qizhi1a440/qingtian/client-gateway/src/main/resources/application.yml'}]}
+2019-07-01 11:04:07.574  INFO 23036 --- [main] c.example.service1.Service1Application   : The following profiles are active: dev
+2019-07-01 11:04:08.164  WARN 23036 --- [main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2019-07-01 11:04:08.175  WARN 23036 --- [main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'hystrix.stream' contains invalid characters, please migrate to a valid format.
+2019-07-01 11:04:08.300  INFO 23036 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=58f7042d-b607-36f4-af51-94e1685f60ae
+2019-07-01 11:04:08.314  INFO 23036 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.example.service1.api.HiFeign' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-01 11:04:08.396  INFO 23036 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$9791eecc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-01 11:04:08.490  INFO 23036 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$b3abf1c9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-01 11:04:08.689  INFO 23036 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 7971 (http)
+2019-07-01 11:04:08.708  INFO 23036 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-07-01 11:04:08.708  INFO 23036 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2019-07-01 11:04:08.841  INFO 23036 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-07-01 11:04:08.841  INFO 23036 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1255 ms
+2019-07-01 11:04:08.933  WARN 23036 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-07-01 11:04:08.933  INFO 23036 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-07-01 11:04:08.941  INFO 23036 --- [main] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@5ffd35dd
+2019-07-01 11:04:09.324  INFO 23036 --- [main] o.s.b.a.e.web.ServletEndpointRegistrar   : Registered '/actuator/hystrix.stream' to hystrix.stream-actuator-endpoint
+2019-07-01 11:04:09.629  WARN 23036 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-07-01 11:04:09.629  INFO 23036 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-07-01 11:04:09.763  INFO 23036 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-07-01 11:04:11.416  INFO 23036 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2019-07-01 11:04:12.734  INFO 23036 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2019-07-01 11:04:12.784  INFO 23036 --- [main] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2019-07-01 11:04:12.790  INFO 23036 --- [main] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2019-07-01 11:04:12.800  INFO 23036 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 21 endpoint(s) beneath base path '/actuator'
+2019-07-01 11:04:12.887  INFO 23036 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2019-07-01 11:04:12.890  INFO 23036 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2019-07-01 11:04:12.891  INFO 23036 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2019-07-01 11:04:12.891  INFO 23036 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2019-07-01 11:04:12.892  INFO 23036 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2019-07-01 11:04:12.892  INFO 23036 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2019-07-01 11:04:12.980  INFO 23036 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-07-01 11:04:12.981  INFO 23036 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2019-07-01 11:04:12.982  INFO 23036 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2019-07-01 11:04:12.982  INFO 23036 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2019-07-01 11:04:12.982  INFO 23036 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2019-07-01 11:04:12.982  INFO 23036 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2019-07-01 11:04:12.982  INFO 23036 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2019-07-01 11:04:12.982  INFO 23036 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2019-07-01 11:04:12.987  INFO 23036 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2019-07-01 11:04:12.988  INFO 23036 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 10
+2019-07-01 11:04:12.990  INFO 23036 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2019-07-01 11:04:12.992  INFO 23036 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1561950252991 with initial instances count: 3
+2019-07-01 11:04:12.994  INFO 23036 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application TX-MANAGER with eureka with status UP
+2019-07-01 11:04:12.995  INFO 23036 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1561950252995, current=UP, previous=STARTING]
+2019-07-01 11:04:12.998  INFO 23036 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_TX-MANAGER/localhost:tx-manager:7971: registering service...
+2019-07-01 11:04:13.046  INFO 23036 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_TX-MANAGER/localhost:tx-manager:7971 - registration status: 204
+2019-07-01 11:04:13.048  INFO 23036 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 7971 (http) with context path ''
+2019-07-01 11:04:13.049  INFO 23036 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 7971
+2019-07-01 11:04:13.052  INFO 23036 --- [main] c.example.service1.Service1Application   : Started Service1Application in 16.295 seconds (JVM running for 17.774)
+2019-07-01 11:04:13.312  INFO 23036 --- [RMI TCP Connection(10)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-07-01 11:04:13.312  INFO 23036 --- [RMI TCP Connection(8)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-07-01 11:04:13.312  INFO 23036 --- [RMI TCP Connection(8)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-07-01 11:04:13.324  INFO 23036 --- [RMI TCP Connection(8)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
+2019-07-01 11:04:14.026  INFO 23036 --- [RMI TCP Connection(10)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-07-01 11:04:14.082  INFO 23036 --- [RMI TCP Connection(10)-127.0.0.1] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://192.168.231.1:7010/
+2019-07-01 11:04:18.136  INFO 23036 --- [RMI TCP Connection(10)-127.0.0.1] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=service-1, profiles=[default], label=dev, version=a8baca1ea44fc63128624f5b926f4e32472dcf5b, state=null
+2019-07-01 11:06:17.943  INFO 16848 --- [main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://192.168.231.1:7010/
+2019-07-01 11:06:22.258  INFO 16848 --- [main] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=service-1-haha, profiles=[haha], label=dev, version=a8baca1ea44fc63128624f5b926f4e32472dcf5b, state=null
+2019-07-01 11:06:22.259  INFO 16848 --- [main] b.c.PropertySourceBootstrapConfiguration : Located property source: CompositePropertySource {name='configService', propertySources=[MapPropertySource {name='configClient'}, MapPropertySource {name='https://github.com/qizhi1a440/qingtian/tx-manager-1/src/main/resources/application.properties'}, MapPropertySource {name='https://github.com/qizhi1a440/qingtian/tx-manager/src/main/resources/application.properties'}, MapPropertySource {name='https://github.com/qizhi1a440/qingtian/service-business/src/main/resources/application.properties'}, MapPropertySource {name='https://github.com/qizhi1a440/qingtian/service-business/src/main/resources/application.yml'}, MapPropertySource {name='https://github.com/qizhi1a440/qingtian/service-2/src/main/resources/application.properties'}, MapPropertySource {name='https://github.com/qizhi1a440/qingtian/service-2/src/main/resources/application.yml'}, MapPropertySource {name='https://github.com/qizhi1a440/qingtian/service-1/src/main/resources/application.yml'}, MapPropertySource {name='https://github.com/qizhi1a440/qingtian/server-zuul/src/main/resources/application.yml'}, MapPropertySource {name='https://github.com/qizhi1a440/qingtian/server-eureka/src/main/resources/application.yml'}, MapPropertySource {name='https://github.com/qizhi1a440/qingtian/config-repo/service-1-haha.yml'}, MapPropertySource {name='https://github.com/qizhi1a440/qingtian/client-gateway/src/main/resources/application.yml'}]}
+2019-07-01 11:06:22.292  INFO 16848 --- [main] c.example.service1.Service1Application   : The following profiles are active: dev
+2019-07-01 11:06:22.891  WARN 16848 --- [main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2019-07-01 11:06:22.905  WARN 16848 --- [main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'hystrix.stream' contains invalid characters, please migrate to a valid format.
+2019-07-01 11:06:23.031  INFO 16848 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=58f7042d-b607-36f4-af51-94e1685f60ae
+2019-07-01 11:06:23.045  INFO 16848 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.example.service1.api.HiFeign' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-01 11:06:23.125  INFO 16848 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$1ebdf479] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-01 11:06:23.216  INFO 16848 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$3ad7f776] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-01 11:06:23.412  INFO 16848 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 7971 (http)
+2019-07-01 11:06:23.431  INFO 16848 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-07-01 11:06:23.432  INFO 16848 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2019-07-01 11:06:23.564  INFO 16848 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-07-01 11:06:23.564  INFO 16848 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1260 ms
+2019-07-01 11:06:23.655  WARN 16848 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-07-01 11:06:23.655  INFO 16848 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-07-01 11:06:23.662  INFO 16848 --- [main] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@5018b56b
+2019-07-01 11:06:24.033  INFO 16848 --- [main] o.s.b.a.e.web.ServletEndpointRegistrar   : Registered '/actuator/hystrix.stream' to hystrix.stream-actuator-endpoint
+2019-07-01 11:06:24.352  WARN 16848 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-07-01 11:06:24.352  INFO 16848 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-07-01 11:06:24.494  INFO 16848 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-07-01 11:06:26.153  INFO 16848 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2019-07-01 11:06:27.472  INFO 16848 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2019-07-01 11:06:27.540  INFO 16848 --- [main] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2019-07-01 11:06:27.547  INFO 16848 --- [main] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2019-07-01 11:06:27.553  INFO 16848 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 21 endpoint(s) beneath base path '/actuator'
+2019-07-01 11:06:27.639  INFO 16848 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2019-07-01 11:06:27.642  INFO 16848 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2019-07-01 11:06:27.644  INFO 16848 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2019-07-01 11:06:27.644  INFO 16848 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2019-07-01 11:06:27.644  INFO 16848 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2019-07-01 11:06:27.645  INFO 16848 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2019-07-01 11:06:27.728  INFO 16848 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-07-01 11:06:27.728  INFO 16848 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2019-07-01 11:06:27.729  INFO 16848 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2019-07-01 11:06:27.729  INFO 16848 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2019-07-01 11:06:27.729  INFO 16848 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2019-07-01 11:06:27.729  INFO 16848 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2019-07-01 11:06:27.729  INFO 16848 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2019-07-01 11:06:27.729  INFO 16848 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2019-07-01 11:06:27.732  INFO 16848 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2019-07-01 11:06:27.733  INFO 16848 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 10
+2019-07-01 11:06:27.735  INFO 16848 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2019-07-01 11:06:27.735  INFO 16848 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1561950387735 with initial instances count: 3
+2019-07-01 11:06:27.737  INFO 16848 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application TX-MANAGER with eureka with status UP
+2019-07-01 11:06:27.737  INFO 16848 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1561950387737, current=UP, previous=STARTING]
+2019-07-01 11:06:27.739  INFO 16848 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_TX-MANAGER/localhost:tx-manager:7971: registering service...
+2019-07-01 11:06:27.769  INFO 16848 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_TX-MANAGER/localhost:tx-manager:7971 - registration status: 204
+2019-07-01 11:06:27.772  INFO 16848 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 7971 (http) with context path ''
+2019-07-01 11:06:27.773  INFO 16848 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 7971
+2019-07-01 11:06:27.775  INFO 16848 --- [main] c.example.service1.Service1Application   : Started Service1Application in 15.61 seconds (JVM running for 17.163)
+2019-07-01 11:06:28.113  INFO 16848 --- [RMI TCP Connection(6)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-07-01 11:06:28.113  INFO 16848 --- [RMI TCP Connection(7)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-07-01 11:06:28.113  INFO 16848 --- [RMI TCP Connection(7)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-07-01 11:06:28.122  INFO 16848 --- [RMI TCP Connection(7)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2019-07-01 11:06:28.731  INFO 16848 --- [RMI TCP Connection(6)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-07-01 11:06:28.790  INFO 16848 --- [RMI TCP Connection(6)-127.0.0.1] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://192.168.231.1:7010/
+2019-07-01 11:06:33.623  INFO 16848 --- [RMI TCP Connection(6)-127.0.0.1] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=service-1-haha, profiles=[haha], label=dev, version=a8baca1ea44fc63128624f5b926f4e32472dcf5b, state=null
+2019-07-01 11:08:40.737  INFO 20324 --- [main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://192.168.231.1:7010/
+2019-07-01 11:08:49.282  INFO 20324 --- [main] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=service-my, profiles=[haha], label=dev, version=f6dd03e8ccfab17ddced3be843b592e828bad11e, state=null
+2019-07-01 11:08:49.283  INFO 20324 --- [main] b.c.PropertySourceBootstrapConfiguration : Located property source: CompositePropertySource {name='configService', propertySources=[MapPropertySource {name='configClient'}, MapPropertySource {name='https://github.com/qizhi1a440/qingtian/config-repo/service-my-haha.yml'}, MapPropertySource {name='https://github.com/qizhi1a440/qingtian/tx-manager-1/src/main/resources/application.properties'}, MapPropertySource {name='https://github.com/qizhi1a440/qingtian/tx-manager/src/main/resources/application.properties'}, MapPropertySource {name='https://github.com/qizhi1a440/qingtian/service-business/src/main/resources/application.properties'}, MapPropertySource {name='https://github.com/qizhi1a440/qingtian/service-business/src/main/resources/application.yml'}, MapPropertySource {name='https://github.com/qizhi1a440/qingtian/service-2/src/main/resources/application.properties'}, MapPropertySource {name='https://github.com/qizhi1a440/qingtian/service-2/src/main/resources/application.yml'}, MapPropertySource {name='https://github.com/qizhi1a440/qingtian/service-1/src/main/resources/application.yml'}, MapPropertySource {name='https://github.com/qizhi1a440/qingtian/server-zuul/src/main/resources/application.yml'}, MapPropertySource {name='https://github.com/qizhi1a440/qingtian/server-eureka/src/main/resources/application.yml'}, MapPropertySource {name='https://github.com/qizhi1a440/qingtian/client-gateway/src/main/resources/application.yml'}]}
+2019-07-01 11:08:49.315  INFO 20324 --- [main] c.example.service1.Service1Application   : The following profiles are active: dev
+2019-07-01 11:08:49.910  WARN 20324 --- [main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2019-07-01 11:08:49.920  WARN 20324 --- [main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'hystrix.stream' contains invalid characters, please migrate to a valid format.
+2019-07-01 11:08:50.046  INFO 20324 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=58f7042d-b607-36f4-af51-94e1685f60ae
+2019-07-01 11:08:50.060  INFO 20324 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.example.service1.api.HiFeign' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-01 11:08:50.141  INFO 20324 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$8d2d15cf] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-01 11:08:50.232  INFO 20324 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$a94718cc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-01 11:08:50.430  INFO 20324 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8765 (http)
+2019-07-01 11:08:50.447  INFO 20324 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-07-01 11:08:50.448  INFO 20324 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2019-07-01 11:08:50.579  INFO 20324 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-07-01 11:08:50.579  INFO 20324 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1251 ms
+2019-07-01 11:08:50.677  WARN 20324 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-07-01 11:08:50.677  INFO 20324 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-07-01 11:08:50.684  INFO 20324 --- [main] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@5c13af01
+2019-07-01 11:08:51.057  INFO 20324 --- [main] o.s.b.a.e.web.ServletEndpointRegistrar   : Registered '/actuator/hystrix.stream' to hystrix.stream-actuator-endpoint
+2019-07-01 11:08:51.365  WARN 20324 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-07-01 11:08:51.365  INFO 20324 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-07-01 11:08:51.498  INFO 20324 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-07-01 11:08:53.146  INFO 20324 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2019-07-01 11:08:54.455  INFO 20324 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2019-07-01 11:08:54.496  INFO 20324 --- [main] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2019-07-01 11:08:54.502  INFO 20324 --- [main] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2019-07-01 11:08:54.509  INFO 20324 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 21 endpoint(s) beneath base path '/actuator'
+2019-07-01 11:08:54.598  INFO 20324 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2019-07-01 11:08:54.601  INFO 20324 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2019-07-01 11:08:54.603  INFO 20324 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2019-07-01 11:08:54.603  INFO 20324 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2019-07-01 11:08:54.604  INFO 20324 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2019-07-01 11:08:54.604  INFO 20324 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2019-07-01 11:08:54.688  INFO 20324 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-07-01 11:08:54.689  INFO 20324 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2019-07-01 11:08:54.690  INFO 20324 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2019-07-01 11:08:54.690  INFO 20324 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2019-07-01 11:08:54.690  INFO 20324 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2019-07-01 11:08:54.690  INFO 20324 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2019-07-01 11:08:54.690  INFO 20324 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2019-07-01 11:08:54.690  INFO 20324 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2019-07-01 11:08:54.693  INFO 20324 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2019-07-01 11:08:54.693  INFO 20324 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 10
+2019-07-01 11:08:54.695  INFO 20324 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2019-07-01 11:08:54.696  INFO 20324 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1561950534696 with initial instances count: 2
+2019-07-01 11:08:54.698  INFO 20324 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application SERVICE-1 with eureka with status UP
+2019-07-01 11:08:54.699  INFO 20324 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1561950534699, current=UP, previous=STARTING]
+2019-07-01 11:08:54.700  INFO 20324 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SERVICE-1/localhost:service-1:8765: registering service...
+2019-07-01 11:08:54.730  INFO 20324 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SERVICE-1/localhost:service-1:8765 - registration status: 204
+2019-07-01 11:08:54.733  INFO 20324 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8765 (http) with context path ''
+2019-07-01 11:08:54.734  INFO 20324 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8765
+2019-07-01 11:08:54.736  INFO 20324 --- [main] c.example.service1.Service1Application   : Started Service1Application in 19.869 seconds (JVM running for 21.557)
+2019-07-01 11:08:55.378  INFO 20324 --- [RMI TCP Connection(7)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-07-01 11:08:55.378  INFO 20324 --- [RMI TCP Connection(8)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-07-01 11:08:55.379  INFO 20324 --- [RMI TCP Connection(8)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-07-01 11:08:55.393  INFO 20324 --- [RMI TCP Connection(8)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 14 ms
+2019-07-01 11:08:56.051  INFO 20324 --- [RMI TCP Connection(7)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-07-01 11:08:56.106  INFO 20324 --- [RMI TCP Connection(7)-127.0.0.1] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://192.168.231.1:7010/
+2019-07-01 11:08:59.497  INFO 20324 --- [RMI TCP Connection(7)-127.0.0.1] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=service-my, profiles=[haha], label=dev, version=f6dd03e8ccfab17ddced3be843b592e828bad11e, state=null
+2019-07-01 11:12:23.373  INFO 12260 --- [main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://192.168.231.1:7010/
+2019-07-01 11:12:27.743  INFO 12260 --- [main] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=service-my, profiles=[haha], label=dev, version=f6dd03e8ccfab17ddced3be843b592e828bad11e, state=null
+2019-07-01 11:12:27.744  INFO 12260 --- [main] b.c.PropertySourceBootstrapConfiguration : Located property source: CompositePropertySource {name='configService', propertySources=[MapPropertySource {name='configClient'}, MapPropertySource {name='https://github.com/qizhi1a440/qingtian/config-repo/service-my-haha.yml'}, MapPropertySource {name='https://github.com/qizhi1a440/qingtian/tx-manager-1/src/main/resources/application.properties'}, MapPropertySource {name='https://github.com/qizhi1a440/qingtian/tx-manager/src/main/resources/application.properties'}, MapPropertySource {name='https://github.com/qizhi1a440/qingtian/service-business/src/main/resources/application.properties'}, MapPropertySource {name='https://github.com/qizhi1a440/qingtian/service-business/src/main/resources/application.yml'}, MapPropertySource {name='https://github.com/qizhi1a440/qingtian/service-2/src/main/resources/application.properties'}, MapPropertySource {name='https://github.com/qizhi1a440/qingtian/service-2/src/main/resources/application.yml'}, MapPropertySource {name='https://github.com/qizhi1a440/qingtian/service-1/src/main/resources/application.yml'}, MapPropertySource {name='https://github.com/qizhi1a440/qingtian/server-zuul/src/main/resources/application.yml'}, MapPropertySource {name='https://github.com/qizhi1a440/qingtian/server-eureka/src/main/resources/application.yml'}, MapPropertySource {name='https://github.com/qizhi1a440/qingtian/client-gateway/src/main/resources/application.yml'}]}
+2019-07-01 11:12:27.773  INFO 12260 --- [main] c.example.service1.Service1Application   : The following profiles are active: dev
+2019-07-01 11:12:28.359  WARN 12260 --- [main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2019-07-01 11:12:28.370  WARN 12260 --- [main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'hystrix.stream' contains invalid characters, please migrate to a valid format.
+2019-07-01 11:12:28.494  INFO 12260 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=58f7042d-b607-36f4-af51-94e1685f60ae
+2019-07-01 11:12:28.507  INFO 12260 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.example.service1.api.HiFeign' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-01 11:12:28.587  INFO 12260 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$adeb2000] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-01 11:12:28.678  INFO 12260 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$ca0522fd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-01 11:12:28.871  INFO 12260 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8765 (http)
+2019-07-01 11:12:28.890  INFO 12260 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-07-01 11:12:28.890  INFO 12260 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2019-07-01 11:12:29.021  INFO 12260 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-07-01 11:12:29.021  INFO 12260 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1236 ms
+2019-07-01 11:12:29.116  WARN 12260 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-07-01 11:12:29.116  INFO 12260 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-07-01 11:12:29.125  INFO 12260 --- [main] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@3aab42d6
+2019-07-01 11:12:29.501  INFO 12260 --- [main] o.s.b.a.e.web.ServletEndpointRegistrar   : Registered '/actuator/hystrix.stream' to hystrix.stream-actuator-endpoint
+2019-07-01 11:12:29.806  WARN 12260 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-07-01 11:12:29.806  INFO 12260 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-07-01 11:12:29.952  INFO 12260 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-07-01 11:12:31.606  INFO 12260 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2019-07-01 11:12:32.930  INFO 12260 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2019-07-01 11:12:32.973  INFO 12260 --- [main] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2019-07-01 11:12:32.978  INFO 12260 --- [main] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2019-07-01 11:12:32.984  INFO 12260 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 21 endpoint(s) beneath base path '/actuator'
+2019-07-01 11:12:33.069  INFO 12260 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2019-07-01 11:12:33.072  INFO 12260 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2019-07-01 11:12:33.074  INFO 12260 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2019-07-01 11:12:33.074  INFO 12260 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2019-07-01 11:12:33.074  INFO 12260 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2019-07-01 11:12:33.074  INFO 12260 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2019-07-01 11:12:33.159  INFO 12260 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-07-01 11:12:33.159  INFO 12260 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2019-07-01 11:12:33.160  INFO 12260 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2019-07-01 11:12:33.160  INFO 12260 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2019-07-01 11:12:33.160  INFO 12260 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2019-07-01 11:12:33.160  INFO 12260 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2019-07-01 11:12:33.160  INFO 12260 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2019-07-01 11:12:33.160  INFO 12260 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2019-07-01 11:12:33.163  INFO 12260 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2019-07-01 11:12:33.164  INFO 12260 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 10
+2019-07-01 11:12:33.165  INFO 12260 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2019-07-01 11:12:33.166  INFO 12260 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1561950753166 with initial instances count: 2
+2019-07-01 11:12:33.169  INFO 12260 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application SERVICE-1 with eureka with status UP
+2019-07-01 11:12:33.169  INFO 12260 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1561950753169, current=UP, previous=STARTING]
+2019-07-01 11:12:33.171  INFO 12260 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SERVICE-1/localhost:service-1:8765: registering service...
+2019-07-01 11:12:33.206  INFO 12260 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SERVICE-1/localhost:service-1:8765 - registration status: 204
+2019-07-01 11:12:33.209  INFO 12260 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8765 (http) with context path ''
+2019-07-01 11:12:33.210  INFO 12260 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8765
+2019-07-01 11:12:33.213  INFO 12260 --- [main] c.example.service1.Service1Application   : Started Service1Application in 15.653 seconds (JVM running for 17.122)
+2019-07-01 11:12:33.629  INFO 12260 --- [RMI TCP Connection(6)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-07-01 11:12:33.629  INFO 12260 --- [RMI TCP Connection(2)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-07-01 11:12:33.629  INFO 12260 --- [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-07-01 11:12:33.638  INFO 12260 --- [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2019-07-01 11:12:34.297  INFO 12260 --- [RMI TCP Connection(6)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-07-01 11:12:34.347  INFO 12260 --- [RMI TCP Connection(6)-127.0.0.1] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://192.168.231.1:7010/
+2019-07-01 11:12:39.496  INFO 12260 --- [RMI TCP Connection(6)-127.0.0.1] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=service-my, profiles=[haha], label=dev, version=f6dd03e8ccfab17ddced3be843b592e828bad11e, state=null
+2019-07-01 11:13:05.161  INFO 13256 --- [main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://192.168.231.1:7010/
+2019-07-01 11:13:09.239  INFO 13256 --- [main] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=service-my, profiles=[haha], label=dev, version=f6dd03e8ccfab17ddced3be843b592e828bad11e, state=null
+2019-07-01 11:13:09.240  INFO 13256 --- [main] b.c.PropertySourceBootstrapConfiguration : Located property source: CompositePropertySource {name='configService', propertySources=[MapPropertySource {name='configClient'}, MapPropertySource {name='https://github.com/qizhi1a440/qingtian/config-repo/service-my-haha.yml'}, MapPropertySource {name='https://github.com/qizhi1a440/qingtian/tx-manager-1/src/main/resources/application.properties'}, MapPropertySource {name='https://github.com/qizhi1a440/qingtian/tx-manager/src/main/resources/application.properties'}, MapPropertySource {name='https://github.com/qizhi1a440/qingtian/service-business/src/main/resources/application.properties'}, MapPropertySource {name='https://github.com/qizhi1a440/qingtian/service-business/src/main/resources/application.yml'}, MapPropertySource {name='https://github.com/qizhi1a440/qingtian/service-2/src/main/resources/application.properties'}, MapPropertySource {name='https://github.com/qizhi1a440/qingtian/service-2/src/main/resources/application.yml'}, MapPropertySource {name='https://github.com/qizhi1a440/qingtian/service-1/src/main/resources/application.yml'}, MapPropertySource {name='https://github.com/qizhi1a440/qingtian/server-zuul/src/main/resources/application.yml'}, MapPropertySource {name='https://github.com/qizhi1a440/qingtian/server-eureka/src/main/resources/application.yml'}, MapPropertySource {name='https://github.com/qizhi1a440/qingtian/client-gateway/src/main/resources/application.yml'}]}
+2019-07-01 11:13:09.271  INFO 13256 --- [main] c.example.service1.Service1Application   : The following profiles are active: dev
+2019-07-01 11:13:09.872  WARN 13256 --- [main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2019-07-01 11:13:09.882  WARN 13256 --- [main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'hystrix.stream' contains invalid characters, please migrate to a valid format.
+2019-07-01 11:13:10.008  INFO 13256 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=c223ffbf-e027-3495-9aea-b5f2a8339918
+2019-07-01 11:13:10.022  INFO 13256 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.example.service1.api.HiFeign' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-01 11:13:10.103  INFO 13256 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$6bc4de2e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-01 11:13:10.192  INFO 13256 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$87dee12b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-01 11:13:10.387  INFO 13256 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8765 (http)
+2019-07-01 11:13:10.405  INFO 13256 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-07-01 11:13:10.405  INFO 13256 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2019-07-01 11:13:10.535  INFO 13256 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-07-01 11:13:10.535  INFO 13256 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1252 ms
+2019-07-01 11:13:10.627  WARN 13256 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-07-01 11:13:10.627  INFO 13256 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-07-01 11:13:10.635  INFO 13256 --- [main] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@662713b6
+2019-07-01 11:13:11.006  INFO 13256 --- [main] o.s.b.a.e.web.ServletEndpointRegistrar   : Registered '/actuator/hystrix.stream' to hystrix.stream-actuator-endpoint
+2019-07-01 11:13:11.313  WARN 13256 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-07-01 11:13:11.313  INFO 13256 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-07-01 11:13:11.449  INFO 13256 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-07-01 11:13:13.106  INFO 13256 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2019-07-01 11:13:14.438  INFO 13256 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2019-07-01 11:13:14.502  INFO 13256 --- [main] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2019-07-01 11:13:14.509  INFO 13256 --- [main] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2019-07-01 11:13:14.518  INFO 13256 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 21 endpoint(s) beneath base path '/actuator'
+2019-07-01 11:13:14.603  INFO 13256 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2019-07-01 11:13:14.607  INFO 13256 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2019-07-01 11:13:14.608  INFO 13256 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2019-07-01 11:13:14.608  INFO 13256 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2019-07-01 11:13:14.609  INFO 13256 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2019-07-01 11:13:14.609  INFO 13256 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2019-07-01 11:13:14.693  INFO 13256 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-07-01 11:13:14.694  INFO 13256 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2019-07-01 11:13:14.695  INFO 13256 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2019-07-01 11:13:14.695  INFO 13256 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2019-07-01 11:13:14.695  INFO 13256 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2019-07-01 11:13:14.695  INFO 13256 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2019-07-01 11:13:14.695  INFO 13256 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2019-07-01 11:13:14.695  INFO 13256 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2019-07-01 11:13:14.698  INFO 13256 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2019-07-01 11:13:14.699  INFO 13256 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 10
+2019-07-01 11:13:14.700  INFO 13256 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2019-07-01 11:13:14.701  INFO 13256 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1561950794701 with initial instances count: 2
+2019-07-01 11:13:14.704  INFO 13256 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application SERVICE-1 with eureka with status UP
+2019-07-01 11:13:14.704  INFO 13256 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1561950794704, current=UP, previous=STARTING]
+2019-07-01 11:13:14.706  INFO 13256 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SERVICE-1/localhost:service-1:8765: registering service...
+2019-07-01 11:13:14.741  INFO 13256 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SERVICE-1/localhost:service-1:8765 - registration status: 204
+2019-07-01 11:13:14.749  INFO 13256 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8765 (http) with context path ''
+2019-07-01 11:13:14.750  INFO 13256 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8765
+2019-07-01 11:13:14.752  INFO 13256 --- [main] c.example.service1.Service1Application   : Started Service1Application in 15.5 seconds (JVM running for 17.019)
+2019-07-01 11:13:15.241  INFO 13256 --- [RMI TCP Connection(8)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-07-01 11:13:15.242  INFO 13256 --- [RMI TCP Connection(6)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-07-01 11:13:15.242  INFO 13256 --- [RMI TCP Connection(6)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-07-01 11:13:15.251  INFO 13256 --- [RMI TCP Connection(6)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2019-07-01 11:13:15.888  INFO 13256 --- [RMI TCP Connection(8)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-07-01 11:13:15.931  INFO 13256 --- [RMI TCP Connection(8)-127.0.0.1] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://192.168.231.1:7010/
+2019-07-01 11:13:19.677  INFO 13256 --- [RMI TCP Connection(8)-127.0.0.1] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=service-my, profiles=[haha], label=dev, version=f6dd03e8ccfab17ddced3be843b592e828bad11e, state=null
+2019-07-01 11:14:22.925  INFO 13256 --- [http-nio-8765-exec-4] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2019-07-01 11:14:22.999  INFO 13256 --- [http-nio-8765-exec-4] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$87dee12b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-01 11:14:24.275  INFO 13256 --- [http-nio-8765-exec-4] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2019-07-01 11:14:24.279  INFO 13256 --- [http-nio-8765-exec-4] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2019-07-01 11:14:24.282  INFO 13256 --- [http-nio-8765-exec-4] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2019-07-01 11:14:24.283  INFO 13256 --- [http-nio-8765-exec-4] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2019-07-01 11:14:24.284  INFO 13256 --- [http-nio-8765-exec-4] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2019-07-01 11:14:24.284  INFO 13256 --- [http-nio-8765-exec-4] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2019-07-01 11:14:24.285  INFO 13256 --- [http-nio-8765-exec-4] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2019-07-01 11:14:24.381  INFO 13256 --- [http-nio-8765-exec-4] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-07-01 11:14:24.381  INFO 13256 --- [http-nio-8765-exec-4] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2019-07-01 11:14:24.381  INFO 13256 --- [http-nio-8765-exec-4] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2019-07-01 11:14:24.382  INFO 13256 --- [http-nio-8765-exec-4] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2019-07-01 11:14:24.382  INFO 13256 --- [http-nio-8765-exec-4] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2019-07-01 11:14:24.382  INFO 13256 --- [http-nio-8765-exec-4] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2019-07-01 11:14:24.382  INFO 13256 --- [http-nio-8765-exec-4] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2019-07-01 11:14:24.382  INFO 13256 --- [http-nio-8765-exec-4] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2019-07-01 11:14:24.385  INFO 13256 --- [http-nio-8765-exec-4] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2019-07-01 11:14:24.385  INFO 13256 --- [http-nio-8765-exec-4] com.netflix.discovery.DiscoveryClient    : Not registering with Eureka server per configuration
+2019-07-01 11:14:24.386  INFO 13256 --- [http-nio-8765-exec-4] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1561950864386 with initial instances count: 2
+2019-07-01 11:14:25.655  INFO 13256 --- [http-nio-8765-exec-4] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2019-07-01 11:14:25.678  INFO 13256 --- [http-nio-8765-exec-4] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://192.168.231.1:7010/
+2019-07-01 11:14:29.368  INFO 13256 --- [http-nio-8765-exec-4] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=service-my, profiles=[haha], label=dev, version=f6dd03e8ccfab17ddced3be843b592e828bad11e, state=null
+2019-07-01 11:14:29.369  INFO 13256 --- [http-nio-8765-exec-4] b.c.PropertySourceBootstrapConfiguration : Located property source: CompositePropertySource {name='configService', propertySources=[MapPropertySource {name='configClient'}, MapPropertySource {name='https://github.com/qizhi1a440/qingtian/config-repo/service-my-haha.yml'}, MapPropertySource {name='https://github.com/qizhi1a440/qingtian/tx-manager-1/src/main/resources/application.properties'}, MapPropertySource {name='https://github.com/qizhi1a440/qingtian/tx-manager/src/main/resources/application.properties'}, MapPropertySource {name='https://github.com/qizhi1a440/qingtian/service-business/src/main/resources/application.properties'}, MapPropertySource {name='https://github.com/qizhi1a440/qingtian/service-business/src/main/resources/application.yml'}, MapPropertySource {name='https://github.com/qizhi1a440/qingtian/service-2/src/main/resources/application.properties'}, MapPropertySource {name='https://github.com/qizhi1a440/qingtian/service-2/src/main/resources/application.yml'}, MapPropertySource {name='https://github.com/qizhi1a440/qingtian/service-1/src/main/resources/application.yml'}, MapPropertySource {name='https://github.com/qizhi1a440/qingtian/server-zuul/src/main/resources/application.yml'}, MapPropertySource {name='https://github.com/qizhi1a440/qingtian/server-eureka/src/main/resources/application.yml'}, MapPropertySource {name='https://github.com/qizhi1a440/qingtian/client-gateway/src/main/resources/application.yml'}]}
+2019-07-01 11:14:29.377  INFO 13256 --- [http-nio-8765-exec-4] o.s.boot.SpringApplication               : The following profiles are active: dev
+2019-07-01 11:14:29.381  INFO 13256 --- [http-nio-8765-exec-4] o.s.boot.SpringApplication               : Started application in 7.731 seconds (JVM running for 91.649)
+2019-07-01 11:14:29.383  INFO 13256 --- [http-nio-8765-exec-4] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2019-07-01 11:14:29.386  INFO 13256 --- [http-nio-8765-exec-4] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2019-07-01 11:14:29.496  INFO 13256 --- [http-nio-8765-exec-4] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2019-07-01 11:14:32.499  INFO 13256 --- [http-nio-8765-exec-4] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2019-07-01 11:14:32.500  WARN 13256 --- [DiscoveryClient-0] c.netflix.discovery.TimedSupervisorTask  : task supervisor shutting down, can't accept the task
+2019-07-01 11:14:32.512  INFO 13256 --- [http-nio-8765-exec-4] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SERVICE-1/localhost:service-1:8765 - deregister  status: 200
+2019-07-01 11:14:32.539  INFO 13256 --- [http-nio-8765-exec-4] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2019-07-01 11:14:32.539  INFO 13256 --- [http-nio-8765-exec-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-07-01 11:14:32.556  INFO 13256 --- [http-nio-8765-exec-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-07-01 11:14:32.558  INFO 13256 --- [http-nio-8765-exec-4] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2019-07-01 11:14:32.559  INFO 13256 --- [http-nio-8765-exec-4] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2019-07-01 11:14:32.561  INFO 13256 --- [http-nio-8765-exec-4] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2019-07-01 11:14:32.561  INFO 13256 --- [http-nio-8765-exec-4] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2019-07-01 11:14:32.561  INFO 13256 --- [http-nio-8765-exec-4] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2019-07-01 11:14:32.561  INFO 13256 --- [http-nio-8765-exec-4] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2019-07-01 11:14:32.647  INFO 13256 --- [http-nio-8765-exec-4] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-07-01 11:14:32.648  INFO 13256 --- [http-nio-8765-exec-4] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2019-07-01 11:14:32.648  INFO 13256 --- [http-nio-8765-exec-4] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2019-07-01 11:14:32.648  INFO 13256 --- [http-nio-8765-exec-4] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2019-07-01 11:14:32.648  INFO 13256 --- [http-nio-8765-exec-4] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2019-07-01 11:14:32.648  INFO 13256 --- [http-nio-8765-exec-4] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2019-07-01 11:14:32.648  INFO 13256 --- [http-nio-8765-exec-4] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2019-07-01 11:14:32.648  INFO 13256 --- [http-nio-8765-exec-4] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2019-07-01 11:14:32.652  INFO 13256 --- [http-nio-8765-exec-4] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2019-07-01 11:14:32.653  INFO 13256 --- [http-nio-8765-exec-4] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 10
+2019-07-01 11:14:32.653  INFO 13256 --- [http-nio-8765-exec-4] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2019-07-01 11:14:32.654  INFO 13256 --- [http-nio-8765-exec-4] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1561950872654 with initial instances count: 2
+2019-07-01 11:14:32.655  INFO 13256 --- [http-nio-8765-exec-4] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application SERVICE-1 with eureka with status DOWN
+2019-07-01 11:14:32.655  WARN 13256 --- [http-nio-8765-exec-4] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1561950872655, current=DOWN, previous=STARTING]
+2019-07-01 11:14:32.656  INFO 13256 --- [http-nio-8765-exec-4] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application SERVICE-1 with eureka with status UP
+2019-07-01 11:14:32.656  INFO 13256 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SERVICE-1/localhost:service-1:8765: registering service...
+2019-07-01 11:14:32.656  WARN 13256 --- [http-nio-8765-exec-4] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1561950872656, current=UP, previous=DOWN]
+2019-07-01 11:14:32.660  INFO 13256 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SERVICE-1/localhost:service-1:8765 - registration status: 204
+2019-07-01 11:14:32.661  INFO 13256 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SERVICE-1/localhost:service-1:8765: registering service...
+2019-07-01 11:14:32.664  INFO 13256 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SERVICE-1/localhost:service-1:8765 - registration status: 204

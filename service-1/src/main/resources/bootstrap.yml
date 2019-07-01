@@ -2,7 +2,7 @@ spring:
   cloud:
     config:
       uri: http://localhost:7010/
-      name: service-1
+      name: service-my
       profile: haha
       label: dev
       discovery:

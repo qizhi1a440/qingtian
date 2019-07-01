@@ -38,7 +38,7 @@ management:
 logging:
   file: var/log/service-order.log
 server:
-  port: 8766
+  port: 8764
 eureka:
   instance:
     leaseRenewalIntervalInSeconds: 10

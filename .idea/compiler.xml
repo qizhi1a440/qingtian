@@ -10,6 +10,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="client-gateway" />
+        <module name="server-config" />
         <module name="server-eureka" />
         <module name="server-zuul" />
         <module name="service-1" />

@@ -1,0 +1,22 @@
+encrypt:
+  key: sfds-35234-fdhdt-456hfg-5436yhfg-346yhfh
+
+spring:
+  application:
+    name: service-config
+
+
+server:
+  port: 7010
+eureka:
+  instance:
+    leaseRenewalIntervalInSeconds: 10
+    health-check-url-path: /actuator/health
+    prefer-ip-address: true
+#    metadata-map:
+#      user.name:  ${spring.security.user.name}
+#      user.password:  ${spring.security.user.password}
+  client:
+    registryFetchIntervalSeconds: 5
+    service-url:
+      defaultZone: http://localhost:8761/eureka/

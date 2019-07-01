@@ -11,12 +11,12 @@ import org.springframework.cloud.netflix.hystrix.EnableHystrix;
 import org.springframework.cloud.netflix.hystrix.dashboard.EnableHystrixDashboard;
 import org.springframework.cloud.openfeign.EnableFeignClients;
 
+//@EnableDistributedTransaction
 @SpringBootApplication
 @EnableEurekaClient
 @EnableFeignClients
 @EnableHystrix
 @EnableHystrixDashboard
-@EnableDistributedTransaction
 public class Service1Application {
 
     public static void main(String[] args) {
